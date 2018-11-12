@@ -1,0 +1,13 @@
+.hero {
+	height: 600px;
+	width: 100%;
+	background-image: url('../../assets/pictures/hero-building-a-martian-house.png');
+	background-size: cover;
+	background-position: center;
+}
+.banner {
+	width: 100%;
+	text-align: center;
+	background-color: white;
+}
+
