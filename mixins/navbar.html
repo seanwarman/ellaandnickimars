@@ -1,13 +1,36 @@
 <style type="text/css">
-  #navbar h1 {
-    margin: 0;
+  #navbar {
+    padding: .7rem;
     box-shadow: 10px 10px grey;
     position: relative;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-bottom: 1px solid #707070;
+  }
+  #navbar .brand {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  #navbar i {
+    background: #14B278;
+    color: white;
+    padding: .3rem;
+    border-radius: 5px;
+    margin-right: .5rem;
   }
 </style>
 <div id="navbar">
-  <h1>The Navbar</h1>
-  <!-- <div></div> -->
+  <div class="container-fluid">
+    <div class="row">
+
+      <h4 class="col-6">
+        <i class="fas fa-angle-double-right"></i>
+        Project Timeline
+      </h4>
+      <h3 class="col-6 brand">
+        Ella&Nicki
+      </h3>
+
+    </div>
+  </div>
 </div>
-<!-- <h1 id="navbar">The Navbar to be</h1> -->

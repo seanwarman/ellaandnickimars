@@ -1,12 +1,41 @@
 *,
 *::before,
 *::after {
-	box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
 }
 
-body {
-	height: 100%;
-	width: 100%;
-	margin: 0;
-	padding: 0;
-}
+/* When it comes to styling the fonts add 
+the exact fonts, sizes and weight of each 
+font to the h tags and p tag so that you
+don't have to add a class or anything for
+the correct fonts, they'll just be globally
+attached to the correct tag as default 
+
+Currently the fonts are:
+
+h1 - The main banner font "Building a Martian House"
+h2 - "Project Partners and Funders" (also "Donate").
+h3 - Elevator pitch font
+h4 - "Project Timeline" text, this will be light weight
+	 and also used for the side panel headings. (multi-sized)
+h5 - Partner names (bold capitals).
+h6 - This could be the quote font in italics (we'll 
+	 make this multi-sized as it'll be used for the
+	 conversation quote as well).
+
+We might need a seperate class for the Ella&Nicki brand.
+That's ok because it'll only be used once.
+
+p - About description next to Ella and Nicki's avatar.
+
+
+*/

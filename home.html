@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./styles/global.css">
     <link rel="stylesheet" href="./styles/layout.css">
+    <link rel="stylesheet" href="./assets/dependencies/fontawesome/css/all.min.css">
     <script type="text/javascript" src="./assets/dependencies/csi.js"></script>
 
     <link rel="stylesheet" href="./styles/views/home.css">
@@ -16,13 +17,21 @@
   </head>
   <body>
     <div data-include="./mixins/navbar.html"></div>
-    
+    <div data-include="./mixins/menu.html"></div>
+
     <div class="hero">
-      <!-- <h1 class="banner">Building A Martian House</h1> -->
-    </div>      
-
-
-
+      <div class="donate-wrapper">
+        <button><h2>Donate</h2></button>  
+      </div>
+      <h1 class="banner">Building A Martian House</h1>
+      <div class="quote-wrapper">
+        <h6>
+          "From now on, we live in a world where man
+          has walked on the moon. It wasn't a miracle,
+          we just decided to go. " - Jim Lovell
+        </h6>
+      </div> 
+    </div>   
 
   </body>
 </html>

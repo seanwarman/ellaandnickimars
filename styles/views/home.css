@@ -1,13 +1,43 @@
 .hero {
-	height: 600px;
-	width: 100%;
-	background-image: url('../../assets/pictures/hero-building-a-martian-house.png');
-	background-size: cover;
-	background-position: center;
+  height: 600px;
+  width: 100%;
+  background-image: url('../../assets/pictures/hero-building-a-martian-house.png');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
 }
-.banner {
-	width: 100%;
-	text-align: center;
-	background-color: white;
+.hero .donate-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 99px;
 }
-
+.hero .donate-wrapper button {
+  background-color: #14B278;
+  border: none;
+  color: white;
+  padding: .2rem 1rem;
+  margin-right: 1.5rem;
+  border-radius: 5px;
+  border: 1px solid white;
+}
+.hero .banner {
+  width: 100%;
+  text-align: center;
+  background-color: white;
+  padding: 2rem 0;
+  color: #F0CA4D;
+}
+.hero .quote-wrapper {
+  height: 100%;
+  align-items: flex-end;
+  display: flex;
+}
+.hero .quote-wrapper h6 {
+  color: #14B278;
+  width: 310px;
+  background: white;
+  padding: .5rem;
+  margin: 1.5rem;
+}
