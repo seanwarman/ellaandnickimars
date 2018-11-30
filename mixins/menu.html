@@ -1,130 +1,114 @@
 <style type="text/css">
   #menu {
     position: absolute;
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+  #menu .menu-outer-wrapper {
+    position: relative;
     top: 0;
     height: 100%;
-    width: 100%;
-    padding-top: 49px;
+    width: 400px;
     display: flex;
+    z-index: 1;
+    left: -400px;
+    transition: left .4s;
   }
-  #menu .menu-inner-wrapper {
+  #menu .menu-outer-wrapper .menu-inner-wrapper {
     background-color: white;
-    border-right: 1px solid #707070;
     box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     padding-top: 1.5rem;
     height: 100%;
-    min-width: 610px;
+    width: 400px;
   }
-  #menu h4 {
+  #menu .menu-outer-wrapper h4 {
     text-align: center;
   }
-  #menu .underline-wrapper {
+  #menu .menu-outer-wrapper .underline-wrapper {
     display: flex;
     justify-content: center;
   }
-  #menu .underline {
+  #menu .menu-outer-wrapper .underline {
     height: 1px;
     width: 130px;
     background-color: #707070;
   }
-  #menu .item-wrapper {
+  #menu .menu-outer-wrapper .item-wrapper {
     margin-top: 1rem;
     margin-bottom: 1rem;
     align-items: center;
+    display: flex;
   }
-  #menu .circle {
+  #menu .menu-outer-wrapper .circle-wrapper {
+    margin-left: 1rem;
+  }
+  #menu .menu-outer-wrapper .circle {
     height: 67px;
     width: 67px;
     border-radius: 50%;
     border: 1px solid #707070;
   }
-  #menu p {
-    /*
-    This may need to be a little smaller 
-    than the global setting for a <p>
-    */
+  #menu .menu-outer-wrapper p {
+    padding: 0 1rem;
   }
   #menu .greyed-out {
     width: 100%;
+    height: 100%;
+    background-image: url('assets/pictures/menu-background-pattern.png');
+    background-repeat: all;
+    background-position: center;
+    background-size: 25px;
+    opacity: 0;
+    margin-left: -400px;
+    transition: opacity .4s;
   }
 </style>
 <div id="menu">
-  <!-- TODO these elements could probably do with not being in containers and rows
-  I could probably do all this using css flex boxes to make it simpler rather than
-  relying on bootstrap, we want the menu to stay a fixed width no matter what screen
-  size (only on mobile it'll go full width) then we also want the circles and <p>s to
-  stay side by side -->
-  <div class="container menu-inner-wrapper">
-    <div class="row">
-      <div class="col-12">
-        <h4>Project Timeline</h4>
-        <div class="underline-wrapper">
-          <div class="underline"></div>
-        </div>  
-      </div>
-    </div>
+  <div class="menu-outer-wrapper">
+    <div class="menu-inner-wrapper">
 
-    <div class="row item-wrapper">
-      <div class="col-3">
-        <div class="circle"></div>
+
+      <h4>Project Timeline</h4>
+      <div class="underline-wrapper">
+        <div class="underline"></div>
       </div>
-      <div class="col-9">
+
+      <div class="item-wrapper">
+        <div class="circle-wrapper">
+          <div class="circle"></div>
+        </div>
         <p>
           A project we made that was amazing you should
           definitely pick this one to look at wow!
         </p>
       </div>
-    </div>
 
-    <div class="row item-wrapper">
-      <div class="col-3">
-        <div class="circle"></div>
-      </div>
-      <div class="col-9">
+      <div class="item-wrapper">
+        <div class="circle-wrapper">
+          <div class="circle"></div>
+        </div>
         <p>
           A project we made that was amazing you should
           definitely pick this one to look at wow!
         </p>
       </div>
-    </div>
 
-    <div class="row item-wrapper">
-      <div class="col-3">
-        <div class="circle"></div>
-      </div>
-      <div class="col-9">
+      <div class="item-wrapper">
+        <div class="circle-wrapper">
+          <div class="circle"></div>
+        </div>
         <p>
           A project we made that was amazing you should
           definitely pick this one to look at wow!
         </p>
       </div>
-    </div>
 
-    <div class="row item-wrapper">
-      <div class="col-3">
-        <div class="circle"></div>
-      </div>
-      <div class="col-9">
-        <p>
-          A project we made that was amazing you should
-          definitely pick this one to look at wow!
-        </p>
-      </div>
     </div>
-
-    <div class="row item-wrapper">
-      <div class="col-3">
-        <div class="circle"></div>
-      </div>
-      <div class="col-9">
-        <p>
-          A project we made that was amazing you should
-          definitely pick this one to look at wow!
-        </p>
-      </div>
-    </div>  
   </div>
+
   <div class="greyed-out">
-    
   </div>
+
 </div>
+

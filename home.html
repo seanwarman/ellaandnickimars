@@ -32,6 +32,21 @@
         </h6>
       </div> 
     </div>   
-
   </body>
+  <script type="text/javascript">
+    
+    //This grabs the menu element that needs moving so that the
+    //menu can slide in from the left when the project imteline
+    //button is clicked. But none of it will work properly using
+    //this silly LexmarkWeb way. I think we need to either make 
+    //this site super plain html or use vue. Probably it'll be 
+    //fine to just make it all plain html.
+    
+    var clickMenu = function(argument) {
+      console.log(document.body.children[3].childNodes[1]);
+    }
+    setTimeout(() => {
+      console.log(document.body.children[3].childNodes[1]);
+    }, 1000);
+  </script>
 </html>
