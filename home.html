@@ -16,6 +16,7 @@
     <title>Building a Martian House</title>
   </head>
   <body>
+
     <!-- Navbar -->
     <!-- This still needs styling for sm so that it fills the full
     width of the screen on mobile -->
@@ -24,8 +25,10 @@
         <div class="row">
 
           <h4 class="col-6">
-            <i class="fas fa-angle-double-right"></i>
-            Project Timeline
+            <button onclick="clickMenu()">
+              <i id="menu-icon" class="fas fa-angle-double-right"></i>
+              Project Timeline
+            </button>
           </h4>
           <h3 class="col-6 brand">
             Ella&Nicki
@@ -35,11 +38,11 @@
       </div>
     </div>
     <!-- Navbar End -->
+
     <!-- Menu -->
     <div id="menu">
       <div class="menu-outer-wrapper">
         <div class="menu-inner-wrapper">
-
 
           <h4>Project Timeline</h4>
           <div class="underline-wrapper">
@@ -98,19 +101,25 @@
     </div>   
   </body>
   <script type="text/javascript">
-    
-    //This grabs the menu element that needs moving so that the
-    //menu can slide in from the left when the project imteline
-    //button is clicked. But none of it will work properly using
-    //this silly LexmarkWeb way. I think we need to either make 
-    //this site super plain html or use vue. Probably it'll be 
-    //fine to just make it all plain html.
-    
-    var clickMenu = function(argument) {
-      console.log(document.body.children[3].childNodes[1]);
+
+    var state = false;
+
+    var clickMenu = function() {
+      var menu = document.getElementsByClassName('menu-outer-wrapper')[0];
+      var greyedOut = document.getElementsByClassName('greyed-out')[0];
+      var icon = document.getElementById('menu-icon');
+      if(state === false) {
+        menu.style.left = '0px';
+        greyedOut.style.opacity = '.3';
+        state = true;
+        icon.classList = ['fas fa-angle-double-left'];
+      } else {
+        menu.style.left = '-430px';
+        greyedOut.style.opacity = '0';
+        state = false;
+        icon.classList = ['fas fa-angle-double-right'];
+      }
     }
-    setTimeout(() => {
-      console.log(document.body.children[3].childNodes[1]);
-    }, 1000);
+
   </script>
 </html>
