@@ -9,8 +9,27 @@ body {
   margin: 0;
   padding: 0;
 }
-h1, h2, h3, h4, h5, h6 {
+h2, h3, h4, h5, h6 {
   margin: 0;
+  font-family: 'Rubik', sans-serif;
+  font-weight: normal;
+  color: #324D5C;
+}
+
+h1 {
+  margin: 0;
+  font-size: 3rem;
+  font-family: 'Comfortaa';
+  font-weight: 600;
+  color: #324D5C;
+}
+
+button h2 {
+  color: white;
+}
+
+h6 {
+  font-style: italic;
 }
 
 /* When it comes to styling the fonts add 
@@ -36,6 +55,13 @@ We might need a seperate class for the Ella&Nicki brand.
 That's ok because it'll only be used once.
 
 p - About description next to Ella and Nicki's avatar.
+
+p = font-family: 'Rubik', sans-serif;
+    font-weight: lighter;
+
+^^ Also good for all smaller h tags. I don't like it 
+for the main heading though.
+
 
 
 */
