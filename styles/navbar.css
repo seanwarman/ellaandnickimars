@@ -1,4 +1,7 @@
 #navbar {
+  height: 48px;
+  display: flex;
+  align-items: center;
   padding: .7rem;
   box-shadow: 10px 10px grey;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -9,9 +12,7 @@
   background: white;
   width: 100%;
   /* End */
-}
-#navbar h4 {
-  white-space: nowrap;
+  z-index: 2;
 }
 #navbar .brand {
   display: flex;
@@ -37,4 +38,16 @@
   padding: .3rem .4rem;
   border-radius: 5px;
   margin-right: .5rem;
+}
+@media (max-width: 576px) {
+  #navbar span {
+    display: none;
+  }
+  #navbar button {
+    position: relative;
+    right: 1rem;
+  }
+  #navbar i {
+    margin-right: 0;
+  }
 }

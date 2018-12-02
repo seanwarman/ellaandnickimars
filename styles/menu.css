@@ -11,7 +11,8 @@
   width: 400px;
   display: flex;
   z-index: 1;
-  /* note this is 430 and not 400 to hide 
+  padding-bottom: 48px;
+  /* note. this is 430 rather than 400 to hide 
   the shadow... */
   left: -430px;
   transition: left .4s;
@@ -21,12 +22,19 @@
   margin-top: 48px;
   /* End */
 }
+@media (max-width: 576px) {
+  #menu .menu-outer-wrapper {
+    width: 100%;
+  }
+}
 #menu .menu-outer-wrapper .menu-inner-wrapper {
   background-color: white;
   box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
   height: 100%;
   width: 400px;
+  overflow: scroll;
 }
 #menu .menu-outer-wrapper h4 {
   text-align: center;

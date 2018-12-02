@@ -9,13 +9,18 @@
   /*height: 600px;*/
   height: 630px;
   background-attachment: fixed;
-  margin-top: 48px;
+  padding-top: 48px;
   background-repeat: no-repeat;
   /*background-position: center;*/
   background-position: 70% 10%;
   /* End fixed settings */
 }
 @media (min-width: 1200px) {
+  .hero {
+    background-size: cover;
+  }
+}
+@media (max-width: 576px) {
   .hero {
     background-size: cover;
   }
@@ -45,7 +50,7 @@
 }
 @media (max-width: 576px) {
   .hero h1.banner {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 }
 .hero .quote-wrapper {
