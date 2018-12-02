@@ -15,7 +15,11 @@
   background-position: 70% 10%;
   /* End fixed settings */
 }
-
+@media (min-width: 1200px) {
+  .hero {
+    background-size: cover;
+  }
+}
 .hero .donate-wrapper {
   display: flex;
   justify-content: flex-end;
