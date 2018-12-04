@@ -10,17 +10,14 @@
   height: 100%;
   width: 400px;
   display: flex;
-  z-index: 1;
+  z-index: 2;
   padding-bottom: 48px;
   /* note. this is 430 rather than 400 to hide 
   the shadow... */
   left: -430px;
   transition: left .4s;
-  /* Fixed settings */
-  /*position: relative;*/
   position: fixed;
   margin-top: 48px;
-  /* End */
 }
 @media (max-width: 576px) {
   #menu .menu-outer-wrapper {
@@ -75,9 +72,7 @@
   background-size: 25px;
   opacity: 0;
   transition: opacity .4s;
-  /* Fixed settings (uncomment margin setting to reverse) */
-  /*margin-left: -400px;*/
   position: fixed;
-  /* End */
+  z-index: 1;
 }
 /* End Menu Styles */

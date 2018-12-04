@@ -5,14 +5,11 @@
   padding: .7rem;
   box-shadow: 10px 10px grey;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  /* Fixed settings */
-  /*position: relative;*/
   position: fixed;
   top: 0;
   background: white;
   width: 100%;
-  /* End */
-  z-index: 2;
+  z-index: 3;
 }
 #navbar .brand {
   display: flex;

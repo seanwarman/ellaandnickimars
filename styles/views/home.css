@@ -8,7 +8,7 @@
   background-size: 1300px;
   /*height: 600px;*/
   height: 630px;
-  background-attachment: fixed;
+  /*background-attachment: fixed;*/
   padding-top: 48px;
   background-repeat: no-repeat;
   /*background-position: center;*/
@@ -66,3 +66,46 @@
   margin: 1.5rem;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+#home img.head-icon {
+  width: 192px;
+}
+#home img.avatar {
+  width: 150px;
+  border-radius: 50%;
+}
+#home h2 {
+  color: white;
+}
+#home .spotlight-avatar {
+  border-radius: 50%;
+  height: 128px;
+  width: 128px;
+  border: solid 7px white;
+}
+#home h5 {
+  padding-top: .8rem;
+}
+#home small {
+  color: white;
+}
+@media (min-width: 768px) {
+  .nudge-left {
+    padding-right: 9rem;
+  }
+  .nudge-right {
+    padding-left: 9rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

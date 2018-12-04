@@ -12,7 +12,7 @@ body {
   margin: 0;
   padding: 0;
 }
-h2, h3, h4, h5, h6 {
+h2, h3, h4, h5, h6, small {
   margin: 0;
   font-family: 'Rubik', sans-serif;
   font-weight: normal;
@@ -26,13 +26,38 @@ h1 {
   font-weight: 600;
   color: #324D5C;
 }
-button h2 {
+h2 {
+  font-size: 2.5rem;
+}
+button {
   color: white;
+  font-size: 1rem;
+}
+
+h3 {
+  font-weight: 700;
+}
+
+h5 {
+  color: white;
+  font-weight: bold;
+  font-size: 1.1rem;
+  font-family: 'Comfortaa';
+  text-transform: uppercase;
 }
 
 h6 {
   font-style: italic;
+  font-size: .8rem;
 }
+
+p {
+  font-size: .9rem;
+  font-family: 'Rubik', sans-serif;
+  font-weight: normal;
+}
+
+
 
 /* When it comes to styling the fonts add 
 the exact fonts, sizes and weight of each 
@@ -64,6 +89,23 @@ p = font-family: 'Rubik', sans-serif;
 ^^ Also good for all smaller h tags. I don't like it 
 for the main heading though.
 
-
-
 */
+
+/* The following two classes will fix all
+your styling guud */
+.body-container {
+  max-width: 780px;
+  padding-bottom: 4rem;
+  padding-top: 4rem;
+}
+.padder {
+  display: flex;
+  padding-top: 3rem;
+}
+/* This is a nice green background */
+.green {
+  background-color: #14B278;
+}
+.weak-center {
+  text-align: center;
+}
