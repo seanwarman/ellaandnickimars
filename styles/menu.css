@@ -27,7 +27,7 @@
 #menu .menu-outer-wrapper .menu-inner-wrapper {
   background-color: white;
   box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  padding-top: 1.5rem;
+  padding-top: 2.5rem;
   padding-bottom: 1.5rem;
   height: 100%;
   width: 400px;
@@ -74,5 +74,6 @@
   transition: opacity .4s;
   position: fixed;
   z-index: 1;
+  pointer-events: none;
 }
 /* End Menu Styles */

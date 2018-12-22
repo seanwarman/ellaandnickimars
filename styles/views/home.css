@@ -3,17 +3,11 @@
   background-image: url('../../assets/pictures/hero-building-a-martian-house.png');
   display: flex;
   flex-direction: column;
-  /* Start fixed settings */
-  /*background-size: cover;*/
   background-size: 1300px;
-  /*height: 600px;*/
   height: 630px;
-  /*background-attachment: fixed;*/
   padding-top: 48px;
   background-repeat: no-repeat;
-  /*background-position: center;*/
   background-position: 70% 10%;
-  /* End fixed settings */
 }
 @media (min-width: 1200px) {
   .hero {
@@ -29,7 +23,7 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  height: 99px;
+  height: 109px;
 }
 .hero .donate-wrapper button {
   background-color: #14B278;
@@ -43,14 +37,13 @@
 .hero h1.banner {
   width: 100%;
   text-align: center;
-  background-color: white;
   padding: .8rem 0;
-  color: #F0CA4D;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  color: #FFF;
+  text-shadow: 2px 2px 5px #0009;
 }
 @media (max-width: 576px) {
   .hero h1.banner {
-    font-size: 1.5rem;
+    font-size: 2.3rem;
   }
 }
 .hero .quote-wrapper {
@@ -60,27 +53,44 @@
 }
 .hero .quote-wrapper h6 {
   color: #14B278;
-  width: 310px;
+  width: 410px;
   background: white;
   padding: .9rem;
   margin: 1.5rem;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+@media (max-width: 576px) {
+  .hero .quote-wrapper h6 {
+    font-size: 0.9rem;
+  }
+}
+.quote-name {
+  font-style: normal;
+  font-size: .7em;
+}
 #home img.head-icon {
   width: 192px;
-}
-#home img.avatar {
-  width: 150px;
-  border-radius: 50%;
-}
-#home h2 {
-  color: white;
 }
 #home .spotlight-avatar {
   border-radius: 50%;
   height: 128px;
   width: 128px;
   border: solid 7px white;
+}
+@media (max-width: 576px) {
+  #home .spotlight-avatar {
+    height: 98px;
+    width: 98px;
+  }
+}
+#home .ed-marsh {
+  background-image: url('../../assets/pictures/partners-edward-marshall-trust.png');
+  background-size: cover;
+  background-position: right;
+  background-size: 140%;
+  background-repeat: no-repeat;
+  background-color: white;
+  margin-top: -19px;
 }
 #home h5 {
   padding-top: .8rem;
@@ -96,7 +106,25 @@
     padding-left: 9rem;
   }
 }
-
+#home .crazy-table-position {
+  position: relative;
+  left: 1rem;
+}
+#home .big-quote {
+  font-size: 2rem;
+  text-align: right;
+  padding-right: 2rem;
+}
+@media (max-width: 576px) {
+  #home .big-quote {
+    text-align: center;
+  }
+}
+#home .card {
+  width: 310px;
+  height: 310px;
+  box-shadow: 3px 3px 5px #0000004d;
+}
 
 
 

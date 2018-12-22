@@ -6,6 +6,22 @@
 *:focus {
   outline: none;
 }
+@font-face {
+  font-family: avenirNextBold;
+  src:  url('../assets/fonts/avenir-next/AvenirNextLTPro-Bold.otf');
+}
+@font-face {
+  font-family: avenirNext;
+  src:  url('../assets/fonts/avenir-next/AvenirNextLTPro-Regular.otf');
+}
+@font-face {
+  font-family: avenirNextItalic;
+  src:  url('../assets/fonts/avenir-next/AvenirNextLTPro-It.otf');
+}
+@font-face {
+  font-family: dinAlt;
+  src:  url('../assets/fonts/din-alternate/DINRegularAlternate.ttf');
+}
 body {
   height: 100%;
   width: 100%;
@@ -14,20 +30,31 @@ body {
 }
 h2, h3, h4, h5, h6, small {
   margin: 0;
-  font-family: 'Rubik', sans-serif;
+  font-family: avenirNext;
   font-weight: normal;
   color: #324D5C;
 }
 
+p {
+  font-family: avenirNext;
+  font-weight: normal;
+  color: #324D5C;
+  font-size: 1.1rem;
+}
+ 
 h1 {
   margin: 0;
-  font-size: 3rem;
-  font-family: 'Comfortaa';
-  font-weight: 600;
+  font-size: 4rem;
+  font-family: dinAlt;
+  font-weight: 500;
   color: #324D5C;
+  text-transform: uppercase;
 }
 h2 {
   font-size: 2.5rem;
+}
+.white {
+  color: white;
 }
 button {
   color: white;
@@ -35,29 +62,31 @@ button {
 }
 
 h3 {
+  font-family: dinAlt;
   font-weight: 700;
+  font-size: 1.6rem;
 }
 
 h5 {
   color: white;
   font-weight: bold;
   font-size: 1.1rem;
-  font-family: 'Comfortaa';
   text-transform: uppercase;
 }
 
 h6 {
+  font-family: avenirNextItalic;
   font-style: italic;
-  font-size: .8rem;
+  font-size: 1.2rem;
 }
 
-p {
-  font-size: .9rem;
-  font-family: 'Rubik', sans-serif;
-  font-weight: normal;
+a {
+  color: #e24a4a;
 }
 
-
+a:hover {
+  cursor: pointer;
+}
 
 /* When it comes to styling the fonts add 
 the exact fonts, sizes and weight of each 
@@ -95,12 +124,18 @@ for the main heading though.
 your styling guud */
 .body-container {
   max-width: 780px;
-  padding-bottom: 4rem;
-  padding-top: 4rem;
+  padding-bottom: 7rem;
+  padding-top: 7rem;
 }
 .padder {
-  display: flex;
+  /* display: flex; */
   padding-top: 3rem;
+}
+.middler {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 /* This is a nice green background */
 .green {
@@ -108,4 +143,11 @@ your styling guud */
 }
 .weak-center {
   text-align: center;
+}
+.weak-right {
+  text-align: right;
+}
+img.avatar {
+  width: 150px;
+  border-radius: 50%;
 }

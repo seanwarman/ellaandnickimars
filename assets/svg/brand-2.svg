@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1064 582">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-Web_1920_2);
+      }
+
+      .cls-2 {
+        fill: #e0d371;
+      }
+
+      .cls-3 {
+        fill: #e24a4a;
+        font-size: 293px;
+        font-family: TrajanPro3-Bold, "Trajan Pro 3";
+        font-weight: 700;
+      }
+    </style>
+    <clipPath id="clip-Web_1920_2">
+      <rect width="1064" height="582"/>
+    </clipPath>
+  </defs>
+  <g id="Web_1920_2" data-name="Web 1920 – 2" class="cls-1">
+    <g id="text" transform="translate(-532 -301)">
+      <circle id="Ellipse_3" data-name="Ellipse 3" class="cls-2" cx="142" cy="142" r="142" transform="translate(1280.773 316)"/>
+      <text id="Ella_Nicki" data-name="Ella&amp;
+Nicki" class="cls-3" transform="translate(537 341)"><tspan x="0" y="220">Ella&amp;</tspan><tspan x="0" y="490">Nicki</tspan></text>
+    </g>
+  </g>
+</svg>

@@ -426,3 +426,12 @@
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+
+@media (max-width: 768px) {
+  .swap-1 {
+    order: 1;
+  }
+  .swap-2 {
+    order: 2;
+  }
+}

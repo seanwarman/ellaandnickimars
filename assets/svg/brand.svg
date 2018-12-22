@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1362 1387">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-brand);
+      }
+
+      .cls-2 {
+        fill: #7683e6;
+      }
+
+      .cls-3, .cls-7 {
+        fill: none;
+      }
+
+      .cls-3 {
+        stroke: #7683e6;
+        stroke-width: 28px;
+      }
+
+      .cls-4 {
+        fill: #e0d371;
+      }
+
+      .cls-5 {
+        fill: #e24a4a;
+        font-size: 293px;
+        font-family: TrajanPro3-Bold, "Trajan Pro 3";
+        font-weight: 700;
+      }
+
+      .cls-6 {
+        stroke: none;
+      }
+    </style>
+    <clipPath id="clip-brand">
+      <rect width="1362" height="1387"/>
+    </clipPath>
+  </defs>
+  <g id="brand" class="cls-1">
+    <g id="eclipse1" transform="translate(-291 -106)">
+      <path id="Path_6" data-name="Path 6" class="cls-2" d="M385.233,467.672l79.774-10.042,28.806-62.695-14.9-99.485-55.2-141.172L330.333-11.632,369.8,182.721l3.686,115.349-79.324,36.215L202.985,313.4,43.949,242.045,37.07,256.763,210.987,392.546l142.908,65.085" transform="translate(742.558 940.555) rotate(83)"/>
+      <path id="Path_5" data-name="Path 5" class="cls-2" d="M353.895,86.708,96.573,218.783v13.17L309.635,183.57l44.26,21.483,27.622,26.9s9.461,47.5,0,112.158-37.842,146.473-37.842,146.473L421.721,380.55l57.187-136.29,14.9-96.646L465.007,86.708l-79.774-9.755" transform="translate(1132 51)"/>
+      <g id="Ellipse_1" data-name="Ellipse 1" class="cls-3" transform="translate(1430.787 -37.98) rotate(44)">
+        <ellipse class="cls-6" cx="253.565" cy="922.216" rx="253.565" ry="922.216"/>
+        <ellipse class="cls-7" cx="253.565" cy="922.216" rx="239.565" ry="908.216"/>
+      </g>
+      <g id="Ellipse_2" data-name="Ellipse 2" class="cls-3" transform="translate(1326.457 74.339) rotate(44)">
+        <ellipse class="cls-6" cx="250.002" cy="753.568" rx="250.002" ry="753.568"/>
+        <ellipse class="cls-7" cx="250.002" cy="753.568" rx="236.002" ry="739.568"/>
+      </g>
+    </g>
+    <g id="text" transform="translate(-323 61)">
+      <circle id="Ellipse_3" data-name="Ellipse 3" class="cls-4" cx="142" cy="142" r="142" transform="translate(1283 316)"/>
+      <text id="Ella_Nicki" data-name="Ella&amp;
+Nicki" class="cls-5" transform="translate(537 341)"><tspan x="0" y="220">Ella&amp;</tspan><tspan x="0" y="490">Nicki</tspan></text>
+    </g>
+  </g>
+</svg>

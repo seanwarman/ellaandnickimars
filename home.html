@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./styles/layout.css">
     <link rel="stylesheet" href="./styles/menu.css">
     <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="./styles/footer.css">
     <link rel="stylesheet" href="./assets/dependencies/fontawesome/css/all.min.css">
     <link href="https://fonts.googleapis.com/css?family=Rubik:300" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Comfortaa:700" rel="stylesheet"> 
@@ -29,7 +30,7 @@
             </button>
           </h4>
           <h3 class="col-6 brand">
-            Ella&Nicki
+            <img src="./assets/svg/brand-2.svg" alt="">
           </h3>
 
         </div>
@@ -183,13 +184,14 @@
       a paypal account -->
       <div class="donate-wrapper">
         <button>Donate</button>  
-      </div>
+      </div>  
       <h1 class="banner">Building a Martian House</h1>
       <div class="quote-wrapper">
         <h6>
           "From now on, we live in a world where man
           has walked on the moon. It wasn't a miracle,
-          we just decided to go. " - Jim Lovell
+          we just decided to go."<br>
+          <span class="quote-name"> - Jim Lovell - Apollo 13 Mission Commander</span>
         </h6>
       </div> 
     </div>
@@ -201,13 +203,16 @@
           <div class="col-12 weak-center">
             <img 
               class="head-icon" 
-              src="assets/pictures/icon-mountains-of-mars.png" 
+              src="assets/svg/brand.svg" 
               alt="mountains-of-mars-icon" 
             />
           </div>
+          <div class="col-12 weak-center padder">
+            <h2>About Ella&Nicki</h2>
+          </div>
         </div>
-        <div class="row padder">
-          <div class="col-12">
+        <div class="row">
+          <div class="col-12 padder">
             <h3>
               Elevator pitch, here we are reading the elevator pitch, 
               I wish I could be involved in this great project. How 
@@ -218,23 +223,23 @@
             </h3>
           </div>
         </div>
-        <div class="row padder">
-          <div class="col-md-3 col-12 weak-center">
+        <div class="row">
+          <div class="col-md-3 col-12 weak-center padder middler">
             <img 
               class="avatar" 
               src="assets/pictures/avatar-ellaandnicki2.png" 
               alt="ella-and-nicki" 
             />
           </div>
-          <div class="col-md-9 col-12">
-            <p>
+          <div class="col-md-9 col-12 padder middler">
+            <p class="about">
               This is Ella and Nicki, aren't they both so 
               interesting and admirable but poor, very poor. Give 
               them money, all your money, they like money but you 
               don't why don't you give them your money, then 
               everyone will be happy.
             </p>
-            <p>
+            <p class="about">
               Then some more interesting stuff about them and how 
               popular and amazing (but poor) they are and how 
               they're going to make some incredible stuff blah 
@@ -246,43 +251,82 @@
       <!-- END section 1 -->
       <div class="container-fluid green">
         <div class="container body-container">
-          <div class="row padder">
-            <div class="col-12 weak-center">
+          <div class="row">
+            <div class="col-12 weak-center padder">
               <img src="assets/pictures/icon-satellite.png" alt="satellite-icon" class="head-icon">
             </div>
           </div>
-          <div class="row padder">
-            <div class="col-12 weak-center">
-              <h2>Project Partners & Funders</h2>  
+          <div class="row">
+            <div class="col-12 weak-center padder">
+              <h2 class="white">Project Partners & Funders</h2>  
             </div>
           </div>
-          <div class="row padder">
-            <div class="col-4 weak-center">
+          <div class="row">
+            <div class="col-sm-4 col-6  weak-center padder">
               <img src="assets/pictures/partners-lucy-berthoud.png" alt="" class="spotlight-avatar">
               <h5>Lucy Berthoud</h5>
               <small>Professor of Space Engineering</small>
             </div>
-            <div class="col-4 weak-center">
+            <div class="col-sm-4 col-6  weak-center padder">
               <img src="assets/pictures/partners-hugh-broughton.png" alt="" class="spotlight-avatar">
               <h5>Hugh Broughton Architects</h5>
             </div>
-            <div class="col-4 weak-center">
-              <img src="assets/pictures/partners-edward-marshall-trust.png" alt="" class="spotlight-avatar">
+            <div class="col-sm-4 col-12  weak-center padder middler">
+              <div class="spotlight-avatar ed-marsh"></div>
               <h5>The Edward Marshall Trust</h5>
             </div>
           </div>
-          <div class="row padder">
-            <div class="col-6 weak-center nudge-right">
+          <div class="row">
+            <div class="col-sm-6 col-6 weak-center padder nudge-right">
               <img src="assets/pictures/partners-space-settlement-challenge.png" alt="" class="spotlight-avatar">
               <h5>MBR Space Settlement Grant</h5>
             </div>
-            <div class="col-6 weak-center nudge-left">
+            <div class="col-sm-6 col-6 weak-center padder nudge-left">
               <img src="assets/pictures/partners-brigstow.png" alt="" class="spotlight-avatar">
               <h5>The Brigstow Institute University of Bristol</h5>
             </div>
           </div>
         </div>
       </div>
+      <div class="container body-container">
+        <div class="row">
+          <div class="col-12 weak-center">
+            <img
+            class="head-icon"
+            src="assets/pictures/icon-mountains-of-mars.png"
+            alt="mountains-of-mars-icon"
+            />
+          </div>
+          <div class="col-12 weak-center padder">
+            <h2>Recent Press Coverage</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-7 col-12 middler padder swap-2">
+            <h6 class="big-quote">
+              “We have already identified five key things to do, taking inspiration from research facilities such as Biosphere 2 and the Mars Desert Research Station in Utah, US.”
+            </h6>
+          </div>
+          <div class="col-md-5 col-12 middler padder swap-1">
+            <a target="_blank" href="https://theconversation.com/five-things-you-need-to-do-to-build-a-home-on-mars-97742"><img class="card" src="./assets/pictures/press-the-conversation.png" alt="press"></a>
+          </div>
+        </div>
+      </div>
+      <div id="footer" class="container-fluid footer">
+        <div class="container">
+          <div class="row middler">
+            <div class="col-12 weak-center padder middler">
+              <img src="./assets/pictures/avatar-ellaandnicki.png" alt="ellaandnicki" class="avatar">
+            </div>
+            <div class="col-12 weak-center padder contact-wrapper">
+              <h2>Contact Us</h2>
+              <p>We like hearing from people.</p>
+              <p><a href="mailto:ellaandnicki@gmail.com">ellaandnicki@gmail.com</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
     </div>  
   </body>
   <script type="text/javascript">

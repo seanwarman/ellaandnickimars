@@ -16,6 +16,9 @@
   justify-content: flex-end;
   align-items: center;
 }
+#navbar .brand img {
+  width: 50px;
+}
 #navbar button {
   background: none;
   border: none;
