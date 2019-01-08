@@ -1,5 +1,5 @@
 .hero {
-  background-image: url('../../assets/pictures/hero-building-a-martian-house.png');
+  background-image: url('../../assets/pictures/rocket-landed.png');
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -7,7 +7,7 @@
   height: 630px;
   padding-top: 48px;
   background-repeat: no-repeat;
-  background-position: 70% 10%;
+  background-position-y: 94%;
 }
 @media (min-width: 1200px) {
   .hero {
@@ -19,22 +19,49 @@
     background-size: cover;
   }
 }
-#home img.head-icon {
+#film-club img.head-icon {
   width: 192px;
 }
-#home .spotlight-avatar {
+#film-club img.big-circle {
+  width: 260px;
+  border-radius: 50%;
+}
+#film-club .video {
+  height: 600px;
+}
+@media (max-width: 768px) {
+  #film-club .video {
+    height: 300px;
+  }
+}
+#film-club .spotlight-avatar {
   border-radius: 50%;
   height: 128px;
   width: 128px;
   border: solid 7px white;
 }
 @media (max-width: 576px) {
-  #home .spotlight-avatar {
+  #film-club .spotlight-avatar {
     height: 98px;
     width: 98px;
   }
 }
-#home .ed-marsh {
+#film-club img.head-icon {
+  width: 192px;
+}
+#film-club .spotlight-avatar {
+  border-radius: 50%;
+  height: 128px;
+  width: 128px;
+  border: solid 7px white;
+}
+@media (max-width: 576px) {
+  #film-club .spotlight-avatar {
+    height: 98px;
+    width: 98px;
+  }
+}
+#film-club .ed-marsh {
   background-image: url('../../assets/pictures/partners-edward-marshall-trust.png');
   background-size: cover;
   background-position: right;
@@ -43,10 +70,10 @@
   background-color: white;
   margin-top: -19px;
 }
-#home h5 {
+#film-club h5 {
   padding-top: .8rem;
 }
-#home small {
+#film-club small {
   color: white;
 }
 @media (min-width: 768px) {
@@ -57,21 +84,21 @@
     padding-left: 9rem;
   }
 }
-#home .crazy-table-position {
+#film-club .crazy-table-position {
   position: relative;
   left: 1rem;
 }
-#home .big-quote {
+#film-club .big-quote {
   font-size: 2rem;
   text-align: right;
   padding-right: 2rem;
 }
 @media (max-width: 576px) {
-  #home .big-quote {
+  #film-club .big-quote {
     text-align: center;
   }
 }
-#home .card {
+#film-club .card {
   width: 310px;
   height: 310px;
   box-shadow: 3px 3px 5px #0000004d;

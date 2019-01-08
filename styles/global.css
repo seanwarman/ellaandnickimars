@@ -20,7 +20,7 @@
 }
 @font-face {
   font-family: dinAlt;
-  src:  url('../assets/fonts/din-alternate/DINRegularAlternate.ttf');
+  src:  url('../assets/fonts/din-alternate/DINAlternateRegular.otf');
 }
 body {
   height: 100%;
@@ -150,4 +150,221 @@ your styling guud */
 img.avatar {
   width: 150px;
   border-radius: 50%;
+}
+/* The hero image will be redefined in the views styles */
+
+.hero .donate-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 109px;
+}
+.hero .donate-wrapper button {
+  background-color: #14B278;
+  border: none;
+  color: white;
+  padding: .2rem 1rem;
+  margin-right: 2.5rem;
+  border-radius: 5px;
+  border: 1px solid white;
+}
+.hero h1.banner {
+  width: 100%;
+  text-align: center;
+  padding: .8rem 0;
+  color: #FFF;
+  text-shadow: 2px 2px 5px #0009;
+}
+@media (max-width: 576px) {
+  .hero h1.banner {
+    font-size: 2.3rem;
+  }
+}
+.hero h4.sub {
+  color: white;
+  text-align: center;
+  text-shadow: 2px 2px 5px #0009;
+  font-size: 1.6rem;
+}
+.hero .quote-wrapper {
+  height: 100%;
+  align-items: flex-end;
+  display: flex;
+}
+.hero .quote-wrapper h6 {
+  color: #14B278;
+  width: 410px;
+  background: white;
+  padding: .9rem;
+  margin: 1.5rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+@media (max-width: 576px) {
+  .hero .quote-wrapper h6 {
+    font-size: 0.9rem;
+  }
+}
+.quote-name {
+  font-style: normal;
+  font-size: .7em;
+}
+/* Menu Styles */
+#menu {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+#menu .menu-outer-wrapper {
+  top: 0;
+  height: 100%;
+  width: 400px;
+  display: flex;
+  z-index: 2;
+  padding-bottom: 48px;
+  /* note. this is 430 rather than 400 to hide 
+  the shadow... */
+  left: -430px;
+  transition: left .4s;
+  position: fixed;
+  margin-top: 48px;
+}
+@media (max-width: 576px) {
+  #menu .menu-outer-wrapper {
+    width: 100%;
+  }
+}
+#menu .menu-outer-wrapper .menu-inner-wrapper {
+  background-color: white;
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding-top: 2.5rem;
+  padding-bottom: 1.5rem;
+  height: 100%;
+  width: 400px;
+  overflow: scroll;
+}
+#menu .menu-outer-wrapper h4 {
+  text-align: center;
+}
+#menu .menu-outer-wrapper .underline-wrapper {
+  display: flex;
+  justify-content: center;
+}
+#menu .menu-outer-wrapper .underline {
+  height: 1px;
+  width: 130px;
+  background-color: #707070;
+}
+#menu .menu-outer-wrapper .item-wrapper {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  align-items: center;
+  display: flex;
+}
+#menu .menu-outer-wrapper .circle-wrapper {
+  margin-left: 1rem;
+}
+#menu .menu-outer-wrapper .circle {
+  height: 67px;
+  width: 67px;
+  border-radius: 50%;
+  border: 1px solid #707070;
+}
+#menu .menu-outer-wrapper p {
+  padding: 0 1rem;
+}
+#menu .greyed-out {
+  width: 100%;
+  height: 100%;
+  background-image: url('../assets/pictures/menu-background-pattern.png');
+  background-repeat: all;
+  background-position: center;
+  background-size: 25px;
+  opacity: 0;
+  transition: opacity .4s;
+  position: fixed;
+  z-index: 1;
+  pointer-events: none;
+}
+/* End Menu Styles */
+#navbar {
+  height: 48px;
+  display: flex;
+  align-items: center;
+  padding: .7rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  position: fixed;
+  top: 0;
+  background: white;
+  width: 100%;
+  z-index: 3;
+}
+#navbar .brand {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+#navbar .brand img {
+  width: 50px;
+}
+#navbar button {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  font-weight: 300;
+  padding: 0;
+  color: inherit;
+  transition: color .2s;
+}
+#navbar button:hover {
+  cursor: pointer;
+  color: #3c6378;
+}
+#navbar i {
+  background: #14B278;
+  color: white;
+  padding: .3rem .4rem;
+  border-radius: 5px;
+  margin-right: .5rem;
+}
+@media (max-width: 576px) {
+  #navbar span {
+    display: none;
+  }
+  #navbar button {
+    position: relative;
+    right: 1rem;
+  }
+  #navbar i {
+    margin-right: 0;
+  }
+}
+#footer {
+  height: 48px;
+  display: flex;
+  align-items: center;
+  padding: .7rem;
+  box-shadow: 0px -6px 8px 0 rgba(0, 0, 0, 0.2), 0px -9px 20px 0 rgba(0, 0, 0, 0.19);
+  background: white;
+  width: 100%;
+  z-index: 3;
+  justify-content: center;
+}
+#footer i {
+  color: #14B278;
+  padding: .3rem .4rem;
+  border-radius: 5px;
+  margin-right: .5rem;
+}
+@media (max-width: 576px) {
+  #footer span {
+    display: none;
+  }
+  #footer button {
+    position: relative;
+    right: 1rem;
+  }
+  #footer i {
+    margin-right: 0;
+  }
 }

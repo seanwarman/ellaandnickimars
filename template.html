@@ -1,6 +1,3 @@
-<!-- 
-  html injector thanks to LexmarkWeb: https://github.com/LexmarkWeb/csi.js
-  -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -9,14 +6,349 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./styles/global.css">
     <link rel="stylesheet" href="./styles/layout.css">
-    <script type="text/javascript" src="./assets/dependencies/csi.js"></script>
+    <link rel="stylesheet" href="./styles/menu.css">
+    <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./assets/dependencies/fontawesome/css/all.min.css">
+    <script src="./assets/dependencies/csi.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:700" rel="stylesheet"> 
 
-    <!-- *** Per page styles here *** -->
-    <!-- <link rel="stylesheet" href="./styles/views/[view].css"> -->
-    <title></title>
+    <link rel="stylesheet" href="./styles/views/home.css">
+    <title>Ella&Nicki</title>
   </head>
-  <body>  
-    <div data-include="./mixins/navbar.html"></div>
-   
+  <body>
+    <!-- Navbar -->
+    <div id="navbar">
+      <div class="container-fluid">
+        <div class="row">
+
+          <h4 class="col-6">
+            <button onclick="clickMenu()">
+              <i id="menu-icon" class="fas fa-angle-double-right"></i>
+              <span>Projects</span>
+            </button>
+          </h4>
+          <h3 class="col-6 brand">
+            <img src="./assets/svg/brand-2.svg" alt="">
+          </h3>
+
+        </div>
+      </div>
+    </div>
+    <!-- Navbar End -->
+
+    <!-- Menu -->
+    <div id="menu">
+      <div class="menu-outer-wrapper">
+        <div class="menu-inner-wrapper">
+
+          <h4>Project Timeline</h4>
+          <div class="underline-wrapper">
+            <div class="underline"></div>
+          </div>
+
+          <div class="item-wrapper">
+            <div class="circle-wrapper">
+              <div class="circle"></div>
+            </div>
+            <p>
+              A project we made that was amazing you should
+              definitely pick this one to look at wow!
+            </p>
+          </div>
+
+          <div class="item-wrapper">
+            <div class="circle-wrapper">
+              <div class="circle"></div>
+            </div>
+            <p>
+              A project we made that was amazing you should
+              definitely pick this one to look at wow!
+            </p>
+          </div>
+
+          <div class="item-wrapper">
+            <div class="circle-wrapper">
+              <div class="circle"></div>
+            </div>
+            <p>
+              A project we made that was amazing you should
+              definitely pick this one to look at wow!
+            </p>
+          </div>
+
+          <div class="item-wrapper">
+            <div class="circle-wrapper">
+              <div class="circle"></div>
+            </div>
+            <p>
+              A project we made that was amazing you should
+              definitely pick this one to look at wow!
+            </p>
+          </div>
+
+          <div class="item-wrapper">
+            <div class="circle-wrapper">
+              <div class="circle"></div>
+            </div>
+            <p>
+              A project we made that was amazing you should
+              definitely pick this one to look at wow!
+            </p>
+          </div>
+
+          <div class="item-wrapper">
+            <div class="circle-wrapper">
+              <div class="circle"></div>
+            </div>
+            <p>
+              A project we made that was amazing you should
+              definitely pick this one to look at wow!
+            </p>
+          </div>
+
+          <div class="item-wrapper">
+            <div class="circle-wrapper">
+              <div class="circle"></div>
+            </div>
+            <p>
+              A project we made that was amazing you should
+              definitely pick this one to look at wow!
+            </p>
+          </div>
+
+          <div class="item-wrapper">
+            <div class="circle-wrapper">
+              <div class="circle"></div>
+            </div>
+            <p>
+              A project we made that was amazing you should
+              definitely pick this one to look at wow!
+            </p>
+          </div>
+
+          <div class="item-wrapper">
+            <div class="circle-wrapper">
+              <div class="circle"></div>
+            </div>
+            <p>
+              A project we made that was amazing you should
+              definitely pick this one to look at wow!
+            </p>
+          </div>
+
+          <div class="item-wrapper">
+            <div class="circle-wrapper">
+              <div class="circle"></div>
+            </div>
+            <p>
+              A project we made that was amazing you should
+              definitely pick this one to look at wow!
+            </p>
+          </div>
+
+          <div class="item-wrapper">
+            <div class="circle-wrapper">
+              <div class="circle"></div>
+            </div>
+            <p>
+              A project we made that was amazing you should
+              definitely pick this one to look at wow!
+            </p>
+          </div>
+
+          <div class="item-wrapper">
+            <div class="circle-wrapper">
+              <div class="circle"></div>
+            </div>
+            <p>
+              A project we made that was amazing you should
+              definitely pick this one to look at wow!
+            </p>
+          </div>
+
+        </div>
+      </div>
+      <!-- <div class="greyed-out" style="width: 0; height: 0;">
+      </div> -->
+      <div class="greyed-out">
+      </div>
+    </div>
+    <!-- End menu -->
+
+    <!-- hero start -->
+    <div class="hero">
+      <!-- TODO The donate button needs to bring up a modal
+      or open a new page that allows the user to pay into
+      a paypal account -->
+      <div class="donate-wrapper">
+        <button>Donate</button>  
+      </div>  
+      <h1 class="banner">Building a Martian House</h1>
+      <div class="quote-wrapper">
+        <h6>
+          "From now on, we live in a world where man
+          has walked on the moon. It wasn't a miracle,
+          we just decided to go."<br>
+          <span class="quote-name"> - Jim Lovell - Apollo 13 Mission Commander</span>
+        </h6>
+      </div> 
+    </div>
+    <!-- end hero -->
+
+    <div id="home"> 
+      <div class="container body-container">
+        <div class="row">
+          <div class="col-12 weak-center">
+            <img 
+              class="head-icon" 
+              src="assets/svg/brand.svg" 
+              alt="mountains-of-mars-icon" 
+            />
+          </div>
+          <div class="col-12 weak-center padder">
+            <h2>About the Project</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 padder">
+            <h3>
+              Elevator pitch, here we are reading the elevator pitch, 
+              I wish I could be involved in this great project. How 
+              do I get involved, how do I hep these amazing artist. 
+              I could do it with all my cash, yes that's it I'll give 
+              these lovely artists all my hard cash. Hmm yes this is 
+              interesting and arresting.
+            </h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3 col-12 weak-center padder middler">
+            <img 
+              class="avatar" 
+              src="assets/pictures/avatar-ellaandnicki2.png" 
+              alt="ella-and-nicki" 
+            />
+          </div>
+          <div class="col-md-9 col-12 padder middler">
+            <p class="about">
+              This is Ella and Nicki, aren't they both so 
+              interesting and admirable but poor, very poor. Give 
+              them money, all your money, they like money but you 
+              don't why don't you give them your money, then 
+              everyone will be happy.
+            </p>
+            <p class="about">
+              Then some more interesting stuff about them and how 
+              popular and amazing (but poor) they are and how 
+              they're going to make some incredible stuff blah 
+              blah.
+            </p>
+          </div>
+        </div>
+      </div> 
+      <!-- END section 1 -->
+      <div class="container-fluid green">
+        <div class="container body-container">
+          <div class="row">
+            <div class="col-12 weak-center padder">
+              <img src="assets/pictures/icon-satellite.png" alt="satellite-icon" class="head-icon">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 weak-center padder">
+              <h2 class="white">Project Partners & Funders</h2>  
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-4 col-6  weak-center padder">
+              <img src="assets/pictures/partners-lucy-berthoud.png" alt="" class="spotlight-avatar">
+              <h5>Lucy Berthoud</h5>
+              <small>Professor of Space Engineering</small>
+            </div>
+            <div class="col-sm-4 col-6  weak-center padder">
+              <img src="assets/pictures/partners-hugh-broughton.png" alt="" class="spotlight-avatar">
+              <h5>Hugh Broughton Architects</h5>
+            </div>
+            <div class="col-sm-4 col-12  weak-center padder middler">
+              <div class="spotlight-avatar ed-marsh"></div>
+              <h5>The Edward Marshall Trust</h5>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6 col-6 weak-center padder nudge-right">
+              <img src="assets/pictures/partners-space-settlement-challenge.png" alt="" class="spotlight-avatar">
+              <h5>MBR Space Settlement Grant</h5>
+            </div>
+            <div class="col-sm-6 col-6 weak-center padder nudge-left">
+              <img src="assets/pictures/partners-brigstow.png" alt="" class="spotlight-avatar">
+              <h5>The Brigstow Institute University of Bristol</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container body-container">
+        <div class="row">
+          <div class="col-12 weak-center">
+            <img
+            class="head-icon"
+            src="assets/pictures/icon-mountains-of-mars.png"
+            alt="mountains-of-mars-icon"
+            />
+          </div>
+          <div class="col-12 weak-center padder">
+            <h2>Recent Press Coverage</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-7 col-12 middler padder swap-2">
+            <h6 class="big-quote">
+              “We have already identified five key things to do, taking inspiration from research facilities such as Biosphere 2 and the Mars Desert Research Station in Utah, US.”
+            </h6>
+          </div>
+          <div class="col-md-5 col-12 middler padder swap-1">
+            <a target="_blank" href="https://theconversation.com/five-things-you-need-to-do-to-build-a-home-on-mars-97742"><img class="card" src="./assets/pictures/press-the-conversation.png" alt="press"></a>
+          </div>
+        </div>
+      </div>
+      <div id="footer" class="container-fluid footer">
+        <div class="container">
+          <div class="row middler">
+            <div class="col-12 weak-center padder middler">
+              <img src="./assets/pictures/avatar-ellaandnicki.png" alt="ellaandnicki" class="avatar">
+            </div>
+            <div class="col-12 weak-center padder contact-wrapper">
+              <h2>Contact Us</h2>
+              <p>We like hearing from people.</p>
+              <p><a href="mailto:ellaandnicki@gmail.com">ellaandnicki@gmail.com</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>  
   </body>
+  <script type="text/javascript">
+
+    var state = false;
+
+    var clickMenu = function() {
+      var menu = document.getElementsByClassName('menu-outer-wrapper')[0];
+      var greyedOut = document.getElementsByClassName('greyed-out')[0];
+      var icon = document.getElementById('menu-icon');
+      if(state === false) {
+        menu.style.left = '0px';
+        greyedOut.style.opacity = '.3';
+        state = true;
+        icon.classList = ['fas fa-angle-double-left'];
+      } else {
+        menu.style.left = '-430px';
+        greyedOut.style.opacity = '0';
+        state = false;
+        icon.classList = ['fas fa-angle-double-right'];
+      }
+    }
+
+  </script>
 </html>
