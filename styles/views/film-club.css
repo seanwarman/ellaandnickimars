@@ -1,5 +1,5 @@
 .hero {
-  background-image: url('../../assets/pictures/rocket-landed.png');
+  background-image: url('../../assets/pictures/film-club-rocket-landed.png');
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -19,8 +19,18 @@
     background-size: cover;
   }
 }
-#film-club img.head-icon {
-  width: 192px;
+#film-club .big-image {
+  background-image: url('../../assets/pictures/film-club-rocket.png');
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  width: 100%;
+}
+#film-club img.head-icon-sm {
+  width: 122px;
+}
+#film-club img.head-icon-lg {
+  width: 262px;
 }
 #film-club img.big-circle {
   width: 260px;
@@ -46,9 +56,6 @@
     width: 98px;
   }
 }
-#film-club img.head-icon {
-  width: 192px;
-}
 #film-club .spotlight-avatar {
   border-radius: 50%;
   height: 128px;
@@ -60,15 +67,6 @@
     height: 98px;
     width: 98px;
   }
-}
-#film-club .ed-marsh {
-  background-image: url('../../assets/pictures/partners-edward-marshall-trust.png');
-  background-size: cover;
-  background-position: right;
-  background-size: 140%;
-  background-repeat: no-repeat;
-  background-color: white;
-  margin-top: -19px;
 }
 #film-club h5 {
   padding-top: .8rem;
