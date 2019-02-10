@@ -30,8 +30,9 @@
 }
 @media (max-width: 576px) {
   #home .spotlight-avatar {
-    height: 98px;
-    width: 98px;
+    height: 78px;
+    width: 78px;
+    border: solid 3px white;
   }
 }
 #home .ed-marsh {
@@ -76,6 +77,12 @@
   height: 310px;
   box-shadow: 3px 3px 5px #0000004d;
 }
+@media (max-width: 576px) {
+  #home .card {
+    width: 219px;
+    height: 219px;
+  }
+}
 #contact.contact {
   padding-bottom: 3rem;
   background-color: #F0CA4D;
@@ -85,4 +92,15 @@
 }
 #contact h2, #contact p {
   color: white;
+}
+
+#home #mc_embed_signup{
+  background:#F0CA4D; 
+  clear:left;
+}
+#home #mc_embed_signup .asterisk {
+  color: #e24a4a;
+}
+#home #mc_embed_signup .button {
+  background-color: #14B278;
 }

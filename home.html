@@ -9,12 +9,39 @@
     <link rel="stylesheet" href="./assets/dependencies/fontawesome/css/all.min.css">
     <script src="./assets/dependencies/csi.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Rubik:300" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Comfortaa:700" rel="stylesheet"> 
-
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:700" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <script src="https://www.paypal.com/sdk/js?client-id=AVPGTF5B8p3UIwq57oF_zqaGl5oaM1NQx2BzPTeymCwMReP9jGCmw27_VBxq1PcSm3wne4NLqT9EEw3a&currency=GBP"></script>
     <link rel="stylesheet" href="./styles/views/home.css">
+    <link href="https://cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+
+   <!--  <script>
+      paypal.Buttons({
+        createOrder: function(data, actions) {
+          // Set up the transaction
+          return actions.order.create({
+            purchase_units: [{
+              amount: {
+                value: '5.00'
+              }
+            }]
+          });
+        },
+        onApprove: function(data, actions) {
+          // Capture the funds from the transaction
+          return actions.order.capture().then(function(details) {
+            // Show a success message to your buyer
+            alert('Transaction completed by ' + details.payer.name.given_name);
+          });
+        }
+      }).render('.donate-wrapper');
+    </script> -->
+
     <title>Ella&Nicki</title>
   </head>
   <body>
+    
     <!-- Navbar -->
     <div id="navbar">
       <div class="container-fluid">
@@ -185,10 +212,10 @@
       <h1 class="banner">Building a Martian House</h1>
       <div class="quote-wrapper">
         <h6>
-          "From now on, we live in a world where man
-          has walked on the moon. It wasn't a miracle,
-          we just decided to go."<br>
-          <span class="quote-name"> - Jim Lovell - Apollo 13 Mission Commander</span>
+          "Our descendants on Mars will know the value of a patch of 
+          green. And if a blade of grass is priceless, what is the 
+          value of a human being?"<br>
+          <span class="quote-name"> - Carl Sagan - Pale Blue Dot: A Vision of the Human Future in Space</span>
         </h6>
       </div> 
     </div>
@@ -277,10 +304,11 @@
             <div class="col-sm-6 col-6 weak-center padder nudge-right">
               <img src="assets/pictures/partners-space-settlement-challenge.png" alt="" class="spotlight-avatar">
               <h5>MBR Space Settlement Grant</h5>
+              <small>This project recieved seed funding from the Dubai Future Foundation through <a href="http://guaana.com">Guaana.com</a></small>
             </div>
             <div class="col-sm-6 col-6 weak-center padder nudge-left">
               <img src="assets/pictures/partners-brigstow.png" alt="" class="spotlight-avatar">
-              <h5>The Brigstow Institute University of Bristol</h5>
+              <h5>The Brigstow Institute <br> University of Bristol</h5>
             </div>
           </div>
         </div>
@@ -319,6 +347,40 @@
               <h2>Contact Us</h2>
               <p>We like hearing from people.</p>
               <p><a href="mailto:ellaandnicki@gmail.com">ellaandnicki@gmail.com</a></p>
+
+
+
+              <!-- Begin Mailchimp Signup Form -->
+              <div id="mc_embed_signup">
+                <form action="https://ellaandnicki.us8.list-manage.com/subscribe/post?u=dcc5ac61143953ee475ef2177&amp;id=911ec2fd3e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                  <div id="mc_embed_signup_scroll">
+                    <p>You can also subscribe to our email list here...</p>
+                    <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+                    <div class="mc-field-group">
+                      <label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
+                      </label>
+                      <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+                    </div>
+                    <div class="mc-field-group">
+                      <label for="mce-FNAME">First Name </label>
+                      <input type="text" value="" name="FNAME" class="" id="mce-FNAME">
+                    </div>
+                    <div class="mc-field-group">
+                      <label for="mce-LNAME">Last Name </label>
+                      <input type="text" value="" name="LNAME" class="" id="mce-LNAME">
+                    </div>
+                    <div id="mce-responses" class="clear">
+                      <div class="response" id="mce-error-response" style="display:none"></div>
+                      <div class="response" id="mce-success-response" style="display:none"></div>
+                    </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_dcc5ac61143953ee475ef2177_911ec2fd3e" tabindex="-1" value=""></div>
+                    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+                  </div>
+                </form>
+              </div>
+              <script type='text/javascript' src='https://s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+              <!--End mc_embed_signup-->
+
             </div>
           </div>
         </div>
