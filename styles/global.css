@@ -189,6 +189,11 @@ img.avatar {
   border-radius: 5px;
   border: 1px solid white;
 }
+
+.hero .donate-wrapper button:hover {
+  cursor: pointer;
+}
+
 .hero h1.banner {
   width: 100%;
   text-align: center;
@@ -233,7 +238,7 @@ img.avatar {
 #menu {
   position: absolute;
   display: flex;
-  width: 100%;
+  /* width: 100%; */
   height: 100%;
 }
 #menu .menu-outer-wrapper {

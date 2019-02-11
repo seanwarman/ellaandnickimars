@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./styles/global.css">
     <link rel="stylesheet" href="./styles/layout.css">
+    <link rel="stylesheet" href="./styles/modal.css">
     <link rel="stylesheet" href="./assets/dependencies/fontawesome/css/all.min.css">
     <script src="./assets/dependencies/csi.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Rubik:300" rel="stylesheet">
@@ -15,28 +16,6 @@
     <script src="https://www.paypal.com/sdk/js?client-id=AVPGTF5B8p3UIwq57oF_zqaGl5oaM1NQx2BzPTeymCwMReP9jGCmw27_VBxq1PcSm3wne4NLqT9EEw3a&currency=GBP"></script>
     <link rel="stylesheet" href="./styles/views/home.css">
     <link href="https://cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
-
-   <!--  <script>
-      paypal.Buttons({
-        createOrder: function(data, actions) {
-          // Set up the transaction
-          return actions.order.create({
-            purchase_units: [{
-              amount: {
-                value: '5.00'
-              }
-            }]
-          });
-        },
-        onApprove: function(data, actions) {
-          // Capture the funds from the transaction
-          return actions.order.capture().then(function(details) {
-            // Show a success message to your buyer
-            alert('Transaction completed by ' + details.payer.name.given_name);
-          });
-        }
-      }).render('.donate-wrapper');
-    </script> -->
 
     <title>Ella&Nicki</title>
   </head>
@@ -201,13 +180,35 @@
     </div>
     <!-- End menu -->
 
+    <div id="modal">
+      <div id="modal-dialogue">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="modal-close"><i class="fas fa-times close-icon"></i></div>
+            <p class="payment-icon-wrapper"><img src="./assets/svg/mars-black-title.svg" alt="mars-icon"></p>
+            <h2>Thank you for your donation!</h2>
+            <p>
+              All proceeds will go directly to the
+              artists in support of their work.
+            </p>
+            <p>
+              <input id="donation-amt" name="donation-amt" type="number" value="5" min="1">
+              <small>Please choose the amount you would like to donate.</small>
+            </p>
+            <div class="paypal-buttons">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- hero start -->
     <div class="hero">
       <!-- TODO The donate button needs to bring up a modal
       or open a new page that allows the user to pay into
       a paypal account -->
       <div class="donate-wrapper">
-        <button>Donate</button>  
+        <button id="donate-button">Donate</button>  
       </div>  
       <h1 class="banner">Building a Martian House</h1>
       <div class="quote-wrapper">
@@ -400,16 +401,19 @@
     var state = false;
 
     var clickMenu = function() {
-      var menu = document.getElementsByClassName('menu-outer-wrapper')[0];
+      var menu = document.getElementById('menu');
+      var menuInner = document.getElementsByClassName('menu-outer-wrapper')[0];
       var greyedOut = document.getElementsByClassName('greyed-out')[0];
       var icon = document.getElementById('menu-icon');
       if(state === false) {
-        menu.style.left = '0px';
+        menu.style.width = '100%';
+        menuInner.style.left = '0px';
         greyedOut.style.opacity = '.3';
         state = true;
         icon.classList = ['fas fa-angle-double-left'];
       } else {
-        menu.style.left = '-430px';
+        menu.style.width = undefined;
+        menuInner.style.left = '-430px';
         greyedOut.style.opacity = '0';
         state = false;
         icon.classList = ['fas fa-angle-double-right'];
@@ -417,4 +421,70 @@
     }
 
   </script>
+
+  <script type="text/javascript">
+    let open = false;
+    const innerModal = document.getElementById('modal-dialogue');
+    const body = document.getElementsByTagName('body')[0];
+    const modal = document.getElementById('modal');
+    const button = document.getElementById('donate-button');
+    const close = document.getElementsByClassName('close-icon')[0];
+
+    var openModal = function() {
+      if(!open) {
+        modal.style.display = 'flex';
+        body.className = 'modal-open';
+        setTimeout( () => {
+          modal.className = 'fade-in';
+          innerModal.className = 'modal-scroll-view';
+        }, 0);
+      } else {
+        
+        body.className = '';
+        setTimeout( () => {
+          modal.className = '';
+          innerModal.className = '';
+        }, 1);
+        setTimeout( () => {
+          modal.style.display = 'none';
+        }, 500);
+      }
+      open = !open;
+    }
+
+    var preventClick = function(event) {
+      event.stopPropagation();
+    }
+
+    button.addEventListener('click', openModal);
+    modal.addEventListener('click', openModal);
+    innerModal.addEventListener('click', preventClick);
+    close.addEventListener('click', openModal);
+
+  </script>
+
+  <script>
+
+    let input = document.getElementById('donation-amt');
+
+    paypal.Buttons({
+      createOrder: function(data, actions) {
+          // Set up the transaction
+          return actions.order.create({
+            purchase_units: [{
+              amount: {
+                value: input.value
+              }
+            }]
+          });
+        },
+        onApprove: function(data, actions) {
+          // Capture the funds from the transaction
+          return actions.order.capture().then(function(details) {
+            // Show a success message to your buyer
+            alert('Transaction completed by ' + details.payer.name.given_name);
+          });
+        }
+      }).render('.paypal-buttons');
+    </script>
 </html>
