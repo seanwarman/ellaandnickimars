@@ -48,14 +48,6 @@
   opacity: 0;
 }
 
-@media(max-width: 576px) {
-  #modal .modal-dialogue {
-    width: 100%;
-  }
-}
-
-
-
 #modal .modal-content {
   position: relative;
   display: -ms-flexbox;
@@ -91,7 +83,6 @@
 
 #modal input {
   margin-bottom: 1rem;
-  margin-left: .5rem;
   width: 100px;
 }
 
@@ -119,11 +110,32 @@
   /* padding: 3rem; */
 }
 
+#modal .close-icon {
+  color: #afafaf;
+}
+
+#modal .close-icon:active {
+  color: #5a5a5a;
+}
+
 #modal #donation-amt {
-  padding: 0.8rem;
   font-size: 1rem;
-  border-radius: 5px;
-  border: 1px solid #c7c7c7;
-  float: right;
-  clear: both;
+  border-bottom: 1px solid #636363;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+.fa-pound-sign {
+  font-size: 1.2rem;
+  margin-right: 0.8rem;
+}
+
+@media(max-width: 576px) {
+  #modal #modal-dialogue {
+    width: 100%;
+  }
+  #modal .modal-body p img {
+    height: 160px;
+  }
 }

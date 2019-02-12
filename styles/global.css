@@ -32,13 +32,13 @@ h2, h3, h4, h5, h6, small {
   margin: 0;
   font-family: avenirNext;
   font-weight: normal;
-  color: #324D5C;
+  color: #2a2a2a;
 }
 
 p {
   font-family: avenirNext;
   font-weight: normal;
-  color: #324D5C;
+  color: #2a2a2a;
   font-size: 1.1rem;
 }
  
@@ -47,7 +47,7 @@ h1 {
   font-size: 4rem;
   font-family: dinAlt;
   font-weight: 500;
-  color: #324D5C;
+  color: #2a2a2a;
   text-transform: uppercase;
 }
 h2 {
@@ -184,14 +184,20 @@ img.avatar {
   background-color: #14B278;
   border: none;
   color: white;
-  padding: .2rem 1rem;
+  padding: 0.7rem 1.6rem;
   margin-right: 2.5rem;
-  border-radius: 5px;
-  border: 1px solid white;
+  border-radius: 9px;
+  border: 2px solid white;
+  font-size: 1.2rem;
+  margin-top: 1rem;
 }
 
 .hero .donate-wrapper button:hover {
   cursor: pointer;
+}
+
+.hero .donate-wrapper button:active {
+  background-color: #0e8458;
 }
 
 .hero h1.banner {
@@ -325,10 +331,14 @@ img.avatar {
   width: 100%;
   z-index: 3;
 }
-#navbar .brand {
+#navbar .brand-wrapper {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+}
+#navbar .brand {
+  font-family: avenirNextBold;
+  height: 22px;
 }
 #navbar .brand img {
   width: 50px;

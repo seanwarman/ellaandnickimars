@@ -32,9 +32,10 @@
               <span>Projects</span>
             </button>
           </h4>
-          <h3 class="col-6 brand">
-            <img src="./assets/svg/brand-2.svg" alt="">
-          </h3>
+          <div class="col-6 brand-wrapper">
+            <!-- <img src="./assets/svg/brand-2.svg" alt=""> -->
+            <h3 class="brand">Ella&Nicki</h3>
+          </div>
 
         </div>
       </div>
@@ -191,10 +192,9 @@
               All proceeds will go directly to the
               artists in support of their work.
             </p>
-            <p>
-              <input id="donation-amt" name="donation-amt" type="number" value="5" min="1">
-              <small>Please choose the amount you would like to donate.</small>
-            </p>
+
+            <i class="fas fa-pound-sign"></i><input id="donation-amt" name="donation-amt" type="number" value="5" min="1">
+
             <div class="paypal-buttons">
             </div>
           </div>
@@ -228,7 +228,7 @@
           <div class="col-12 weak-center">
             <img 
               class="head-icon" 
-              src="assets/svg/brand.svg" 
+              src="assets/svg/mars-black-title.svg" 
               alt="mountains-of-mars-icon" 
             />
           </div>
@@ -305,7 +305,9 @@
             <div class="col-sm-6 col-6 weak-center padder nudge-right">
               <img src="assets/pictures/partners-space-settlement-challenge.png" alt="" class="spotlight-avatar">
               <h5>MBR Space Settlement Grant</h5>
-              <small>This project recieved seed funding from the Dubai Future Foundation through <a href="http://guaana.com">Guaana.com</a></small>
+              <small>This project recieved seed funding from the Dubai Future Foundation through 
+                <a class="white" target="_blank" href="http://guaana.com">Guaana.com</a>
+              </small>
             </div>
             <div class="col-sm-6 col-6 weak-center padder nudge-left">
               <img src="assets/pictures/partners-brigstow.png" alt="" class="spotlight-avatar">
@@ -437,7 +439,7 @@
         setTimeout( () => {
           modal.className = 'fade-in';
           innerModal.className = 'modal-scroll-view';
-        }, 0);
+        }, 10);
       } else {
         
         body.className = '';
