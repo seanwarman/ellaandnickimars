@@ -1,23 +1,62 @@
-.hero {
-  background-image: url('../../assets/pictures/hero-building-a-martian-house.png');
+.hero-wrapper {
   width: 100%;
   display: flex;
   flex-direction: column;
-  background-size: 1300px;
-  height: 630px;
   padding-top: 48px;
+  position: relative;
+  overflow: hidden;
+}
+.hero {
   background-repeat: no-repeat;
-  background-position: 70% 10%;
+  width: 100%;
+  position: absolute;
 }
-@media (min-width: 1200px) {
-  .hero {
-    background-size: cover;
-  }
+.background-wrapper {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
-@media (max-width: 576px) {
-  .hero {
-    background-size: cover;
-  }
+#background {
+  background-image: url('../../assets/pictures/3dhero/hero-building-a-martian-house-background-stretched-2.png');
+  z-index: -3;
+  filter: blur(6.4px);
+  height: 3107px;
+  background-position-x: 90%;
+  bottom: 0;
+  width: 1670px;
+  transition: all .1s;
+}
+.midground-wrapper {
+  height: 330px;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+#midground {
+  background-image: url('../../assets/pictures/3dhero/hero-building-a-martian-house-midground.png');
+  z-index: -2;
+  background-position: 0% 0%;
+  height: 100%;
+}
+.foreground-wrapper {
+  height: 711px;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  transition: all .1s;
+}
+#foreground {
+  background-image: url('../../assets/pictures/3dhero/hero-building-a-martian-house-foreground.png');
+  z-index: -1;
+  background-size: cover;
+  background-position-x: 68%;
+  height: 100%;
+  bottom: -300px;
+}
+#home {
+  background-color: white;
 }
 #home img.head-icon {
   width: 192px;

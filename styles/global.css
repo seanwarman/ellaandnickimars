@@ -174,13 +174,13 @@ img.avatar {
 }
 /* The hero image will be redefined in the views styles */
 
-.hero .donate-wrapper {
+.hero-wrapper .donate-wrapper {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   height: 109px;
 }
-.hero .donate-wrapper button {
+.hero-wrapper .donate-wrapper button {
   background-color: #14B278;
   border: none;
   color: white;
@@ -192,38 +192,39 @@ img.avatar {
   margin-top: 1rem;
 }
 
-.hero .donate-wrapper button:hover {
+.hero-wrapper .donate-wrapper button:hover {
   cursor: pointer;
 }
 
-.hero .donate-wrapper button:active {
+.hero-wrapper .donate-wrapper button:active {
   background-color: #0e8458;
 }
 
-.hero h1.banner {
+.hero-wrapper h1.banner {
   width: 100%;
   text-align: center;
   padding: .8rem 0;
   color: #FFF;
   text-shadow: 2px 2px 5px #0009;
+  margin-top: 5rem;
 }
 @media (max-width: 576px) {
-  .hero h1.banner {
+  .hero-wrapper h1.banner {
     font-size: 2.3rem;
   }
 }
-.hero h4.sub {
+.hero-wrapper h4.sub {
   color: white;
   text-align: center;
   text-shadow: 2px 2px 5px #0009;
   font-size: 1.6rem;
 }
-.hero .quote-wrapper {
+.hero-wrapper .quote-wrapper {
   height: 100%;
   align-items: flex-end;
   display: flex;
 }
-.hero .quote-wrapper h6 {
+.hero-wrapper .quote-wrapper h6 {
   color: #14B278;
   width: 410px;
   background: white;
@@ -232,8 +233,11 @@ img.avatar {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 @media (max-width: 576px) {
-  .hero .quote-wrapper h6 {
+  .hero-wrapper .quote-wrapper h6 {
     font-size: 0.9rem;
+  }
+  .hero-wrapper .quote-wrapper {
+    display: none;
   }
 }
 .quote-name {

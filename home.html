@@ -13,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css?family=Comfortaa:700" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <script src="https://www.paypal.com/sdk/js?client-id=AVPGTF5B8p3UIwq57oF_zqaGl5oaM1NQx2BzPTeymCwMReP9jGCmw27_VBxq1PcSm3wne4NLqT9EEw3a&currency=GBP"></script>
+    <!-- <script src="https://www.paypal.com/sdk/js?client-id=AVPGTF5B8p3UIwq57oF_zqaGl5oaM1NQx2BzPTeymCwMReP9jGCmw27_VBxq1PcSm3wne4NLqT9EEw3a&currency=GBP"></script> -->
     <link rel="stylesheet" href="./styles/views/home.css">
     <link href="https://cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
 
@@ -203,7 +203,19 @@
     </div>
 
     <!-- hero start -->
-    <div class="hero">
+    <div class="hero-wrapper">
+      <div class="background-wrapper">
+        <div id="background" class="hero"></div>  
+      </div>
+      
+      <div class="midground-wrapper">
+        <div id="midground" class="hero"></div>  
+      </div>
+      
+      <div class="foreground-wrapper">
+        <div id="foreground" class="hero"></div>
+      </div>
+      
       <!-- TODO The donate button needs to bring up a modal
       or open a new page that allows the user to pay into
       a paypal account -->
@@ -398,6 +410,7 @@
       
     </div>  
   </body>
+  <script src="./js/hero.js"></script>
   <script type="text/javascript">
 
     var state = false;
@@ -464,7 +477,6 @@
     close.addEventListener('click', openModal);
 
   </script>
-
   <script>
 
     let input = document.getElementById('donation-amt');
