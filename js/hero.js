@@ -11,7 +11,23 @@ heroWrapper.style.height = windowHeight+'px';
 
 var scroll = Math.max(window.pageYOffset, document.documentElement.scrollTop, document.body.scrollTop);
 
-document.addEventListener('scroll', (event) => {
+var animate = () => {
   background.style.bottom = ((window.pageYOffset*2.3) * -1)+'px';
   foreground.style.bottom = Math.min(0, ((window.pageYOffset/4) + -300))+'px';
-});
+}
+
+
+
+  window.requestAnimationFrame( () => {
+    document.addEventListener('scroll', () => {
+
+      animate();
+
+
+
+    });
+  });
+
+
+
+  
