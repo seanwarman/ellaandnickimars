@@ -3,9 +3,43 @@
 }
 #home .mars-landscape {
   background-image: url('../../assets/pictures/3dhero/hero-building-a-martian-house-background-stretched-2.png');
-  background-size: cover;
+  background-size: 2000px;
   background-position: bottom;
+  background-repeat: no-repeat;
   height: 100%;
+  width: 100%;
+  position: absolute;
+}
+#home .mars-hills {
+  background-image: url('../../assets/pictures/3dhero/hero-building-a-martian-house-midground.png');
+  height: 100%;
+  width: 100%;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: bottom left;
+}
+#home .mars-people {
+  background-image: url('../../assets/pictures/3dhero/hero-building-a-martian-house-foreground.png');
+  height: 100%;
+  width: 100%;
+  background-position: 70% bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: translateZ(-300px) scale(2) translateY(170px);
+}
+@media (max-width: 576px) {
+  #home .mars-people {
+    background-size: cover;
+  }
+}
+#home .hero {
+  position: relative;
+  /* z-index: -1; */
+}
+#home .about {
+  position: relative;
+  z-index: 4;
+  background-color: white;
 }
 #home img.head-icon {
   width: 192px;

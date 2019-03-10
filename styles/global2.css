@@ -141,15 +141,23 @@ for the main heading though.
 .plx-group {
   transform-style: preserve-3d;
   /* height: 100vh; */
+  position: relative;
+}
+.plx-layer {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
 }
 .plx-fore {
   transform: translateZ(0px);
 }
 .plx-mid {
-  transform: translateZ(-300px);  
+  transform: translateZ(-300px) scale(2);  
 }
 .plx-back {
-  transform: translateZ(-600px);
+  transform: translateZ(-600px) scale(3);
 }
 .body-container {
   display: grid;
