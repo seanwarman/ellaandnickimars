@@ -94,6 +94,12 @@ a {
 a:hover {
   cursor: pointer;
 }
+.hide-me { 
+  opacity: 0;
+}
+body {
+  transition: opacity .3s;
+}
 
 /* When it comes to styling the fonts add 
 the exact fonts, sizes and weight of each 
@@ -108,11 +114,11 @@ h1 - The main banner font "Building a Martian House"
 h2 - "Project Partners and Funders" (also "Donate").
 h3 - Elevator pitch font
 h4 - "Project Timeline" text, this will be light weight
-	 and also used for the side panel headings. (multi-sized)
+   and also used for the side panel headings. (multi-sized)
 h5 - Partner names (bold capitals).
 h6 - This could be the quote font in italics (we'll 
-	 make this multi-sized as it'll be used for the
-	 conversation quote as well).
+   make this multi-sized as it'll be used for the
+   conversation quote as well).
 
 We might need a seperate class for the Ella&Nicki brand.
 That's ok because it'll only be used once.
@@ -134,7 +140,7 @@ for the main heading though.
 }
 .plx-group {
   transform-style: preserve-3d;
-  height: 100vh;
+  /* height: 100vh; */
 }
 .plx-fore {
   transform: translateZ(0px);
@@ -146,14 +152,18 @@ for the main heading though.
   transform: translateZ(-600px);
 }
 .body-container {
-  max-width: 780px;
-  padding-bottom: 7rem;
-  padding-top: 7rem;
+  display: grid;
+  justify-content: center;
+  align-items: center;
 }
 .padder {
-  /* display: flex; */
   padding-top: 3rem;
 }
+
+
+
+
+
 .middler {
   display: flex;
   flex-direction: column;

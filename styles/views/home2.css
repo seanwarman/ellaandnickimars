@@ -1,0 +1,98 @@
+#home {
+  /* background-color: white; */
+}
+#home .mars-landscape {
+  background-image: url('../../assets/pictures/3dhero/hero-building-a-martian-house-background-stretched-2.png');
+  background-size: cover;
+  background-position: bottom;
+  height: 100%;
+}
+#home img.head-icon {
+  width: 192px;
+}
+#home .spotlight-avatar {
+  border-radius: 50%;
+  height: 128px;
+  width: 128px;
+  border: solid 7px white;
+}
+@media (max-width: 576px) {
+  #home .spotlight-avatar {
+    height: 78px;
+    width: 78px;
+    border: solid 3px white;
+  }
+}
+#home .ed-marsh {
+  background-image: url('../../assets/pictures/partners-edward-marshall-trust.png');
+  background-size: cover;
+  background-position: right;
+  background-size: 140%;
+  background-repeat: no-repeat;
+  background-color: white;
+  margin-top: -19px;
+}
+#home h5 {
+  padding-top: .8rem;
+}
+#home small {
+  color: white;
+}
+@media (min-width: 768px) {
+  .nudge-left {
+    padding-right: 9rem;
+  }
+  .nudge-right {
+    padding-left: 9rem;
+  }
+}
+#home .crazy-table-position {
+  position: relative;
+  left: 1rem;
+}
+#home .big-quote {
+  font-size: 2rem;
+  text-align: right;
+  padding-right: 2rem;
+}
+@media (max-width: 576px) {
+  #home .big-quote {
+    text-align: center;
+  }
+}
+#home .card {
+  width: 310px;
+  height: 310px;
+  box-shadow: 3px 3px 5px #0000004d;
+}
+@media (max-width: 576px) {
+  #home .card {
+    width: 219px;
+    height: 219px;
+  }
+}
+#contact.contact {
+  padding-bottom: 3rem;
+  background-color: #F0CA4D;
+}
+#contact  .contact-wrapper {
+  max-width: 400px;
+}
+#contact h2, #contact p {
+  color: white;
+}
+
+#home #mc_embed_signup{
+  background:#F0CA4D; 
+  clear:left;
+}
+#home #mc_embed_signup .asterisk {
+  color: #e24a4a;
+}
+#home #mc_embed_signup .button {
+  background-color: #14B278;
+}
+
+#mc_embed_signup #mc-embedded-subscribe-form div.mce_inline_error {
+  background-color: unset !important;
+}

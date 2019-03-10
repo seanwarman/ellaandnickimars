@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<style type="text/css">
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  *:focus {
+    outline: none;
+  }
+  body {
+    margin: 0;
+  }
+  .wrapper {
+    perspective: 1px;
+    height: 100vh;
+    overflow: auto;
+  }
+  .layer {
+    position: absolute;
+    padding: 100vh 100vw;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  .mid-background {
+    transform: translateZ(-.5px) scale(1);
+  }
+  .background {
+    transform: translateZ(-1px) scale(1);
+    /* background-color: #5c8; */
+  }
+  .side {
+    width: 300px;
+    height: 300px;
+    background-color: #ff634794;
+  }
+</style>
+<body>
+  <div class="wrapper">
+    <div class="layer background">
+      <div class="side"></div>
+    </div>
+    <div class="layer mid-background">
+      <div class="side"></div>
+    </div>
+    <div class="layer foreground">
+      <div class="side"></div>
+    </div>
+  </div>
+  
+  <!-- <div class="layer midground"></div> -->
+  
+</body>
+</html>

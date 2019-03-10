@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="./styles/global2.css">
     <link rel="stylesheet" href="./styles/layout.css">
     <link rel="stylesheet" href="./styles/modal.css">
     <link rel="stylesheet" href="./assets/dependencies/fontawesome/css/all.min.css">
@@ -14,12 +14,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <!-- <script src="https://www.paypal.com/sdk/js?client-id=AVPGTF5B8p3UIwq57oF_zqaGl5oaM1NQx2BzPTeymCwMReP9jGCmw27_VBxq1PcSm3wne4NLqT9EEw3a&currency=GBP"></script> -->
-    <link rel="stylesheet" href="./styles/views/home.css">
+    <link rel="stylesheet" href="./styles/views/home2.css">
     <!-- <link href="https://cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css"> -->
 
     <title>Ella&Nicki</title>
   </head>
-  <body>
+  <body class="hide-me">
     
     <!-- Navbar -->
     <div id="navbar">
@@ -202,40 +202,11 @@
       </div>
     </div>
 
-    <!-- hero start -->
-    <div class="hero-wrapper">
-      <div class="background-wrapper">
-        <div id="background" class="hero"></div>  
+    <div id="home" class="plx-page">
+      <div class="plx-group">
+        <div class="mars-landscape"></div>
       </div>
-      
-      <div class="midground-wrapper">
-        <div id="midground" class="hero"></div>  
-      </div>
-      
-      <div class="foreground-wrapper">
-        <div id="foreground" class="hero"></div>
-      </div>
-      
-      <!-- TODO The donate button needs to bring up a modal
-      or open a new page that allows the user to pay into
-      a paypal account -->
-      <div class="donate-wrapper">
-        <button id="donate-button">Donate</button>  
-      </div>  
-      <h1 class="banner">Building a Martian House</h1>
-      <div class="quote-wrapper">
-        <h6>
-          "Our descendants on Mars will know the value of a patch of 
-          green. And if a blade of grass is priceless, what is the 
-          value of a human being?"<br>
-          <span class="quote-name"> - Carl Sagan - Pale Blue Dot: A Vision of the Human Future in Space</span>
-        </h6>
-      </div> 
-    </div>
-    <!-- end hero -->
-
-    <div id="home"> 
-      <div class="container body-container">
+      <div class="container body-container plx-group">
         <div class="row">
           <div class="col-12 weak-center">
             <img 
@@ -286,7 +257,7 @@
         </div>
       </div> 
       <!-- END section 1 -->
-      <div class="container-fluid green">
+      <div class="container-fluid green plx-group">
         <div class="container body-container">
           <div class="row">
             <div class="col-12 weak-center padder">
@@ -328,7 +299,7 @@
           </div>
         </div>
       </div>
-      <div class="container body-container">
+      <div class="container body-container plx-group">
         <div class="row">
           <div class="col-12 weak-center">
             <img
@@ -352,7 +323,7 @@
           </div>
         </div>
       </div>
-      <div id="contact" class="container-fluid contact">
+      <div id="contact" class="container-fluid contact plx-group">
         <div class="container">
           <div class="row middler">
             <div class="col-12 weak-center padder middler">
@@ -387,7 +358,7 @@
                     <div id="mce-responses" class="clear">
                       <div class="response" id="mce-error-response" style="display:none"></div>
                       <div class="response" id="mce-success-response" style="display:none"></div> -->
-                    </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                    <!-- </div>     real people should not fill this in and expect good things - do not remove this or risk form bot signups -->
                   <!--   <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_dcc5ac61143953ee475ef2177_911ec2fd3e" tabindex="-1" value=""></div>
                     <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
                   </div>
@@ -400,13 +371,15 @@
           </div>
         </div>
       </div>
-
       <div id="footer" class="container-fluid">
         <a target="_blank" href="https://twitter.com/ellaandnicki"><i class="fab fa-twitter"></i></a>
         <a target="_blank" href="https://www.facebook.com/groups/1741972649361191/"><i class="fab fa-facebook-f"></i></a>
         <a target="_blank" href="https://www.instagram.com/ellaandnicki/"><i class="fab fa-instagram"></i></a>
         <a target="_blank" href="https://www.youtube.com/channel/UCtcxLadKMYBc8YRAdE7_IUA"><i class="fab fa-youtube"></i></a>
       </div>
+    </div>
+
+    
       
     </div>  
   </body>
@@ -500,5 +473,6 @@
           });
         }
       }).render('.paypal-buttons');
-    </script>
+  </script>
+  <script src="./js/global.js"></script>
 </html>
