@@ -149,6 +149,9 @@ for the main heading though.
   bottom: 0;
   right: 0;
 }
+.plx-close {
+  transform: translateZ(10px);
+}
 .plx-fore {
   transform: translateZ(0px);
 }
