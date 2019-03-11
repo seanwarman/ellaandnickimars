@@ -37,8 +37,8 @@
   /* z-index: -1; */
 }
 #home .about {
-  position: relative;
-  z-index: 4;
+  /* position: relative;
+  z-index: 4; */
   background-color: white;
 }
 #home img.head-icon {
@@ -79,6 +79,9 @@
   .nudge-right {
     padding-left: 9rem;
   }
+}
+#home .press {
+  background-color: white;
 }
 #home .crazy-table-position {
   position: relative;
