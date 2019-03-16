@@ -3,21 +3,11 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  background-size: 1300px;
+  background-size: cover;
   height: 630px;
   padding-top: 48px;
   background-repeat: no-repeat;
   background-position: top;
-}
-@media (min-width: 1200px) {
-  .hero {
-    background-size: cover;
-  }
-}
-@media (max-width: 576px) {
-  .hero {
-    background-size: cover;
-  }
 }
 #the-launches .intro-image {
   overflow: hidden;

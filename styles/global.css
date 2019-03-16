@@ -99,6 +99,9 @@ a:hover {
 body {
   transition: opacity 1s;
 }
+.hero {
+  height: 100vh !important;
+}
 
 /* When it comes to styling the fonts add 
 the exact fonts, sizes and weight of each 
@@ -161,7 +164,7 @@ for the main heading though.
   transform: translateZ(-600px) scale(3);
 }
 .body-container {
-  /* display: grid; */
+  display: grid;
   /* justify-content: center; */
   /* align-items: center; */
   padding: 5rem 0 8rem 0;
@@ -200,55 +203,34 @@ img.avatar {
   width: 230px;
   border-radius: 50%;
 }
-/* The hero image will be redefined in the views styles */
-.hero-wrapper .donate-wrapper {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  height: 109px;
+img.head-icon {
+  width: 192px;
 }
-.hero-wrapper .donate-wrapper button {
-  background-color: #14B278;
-  border: none;
-  color: white;
-  padding: 0.7rem 1.6rem;
-  margin-right: 2.5rem;
-  border-radius: 9px;
-  border: 2px solid white;
-  font-size: 1.2rem;
-  margin-top: 1rem;
-}
-.hero-wrapper .donate-wrapper button:hover {
-  cursor: pointer;
-}
-.hero-wrapper .donate-wrapper button:active {
-  background-color: #0e8458;
-}
-.hero-wrapper h1.banner {
+h1.banner {
   width: 100%;
   text-align: center;
   padding: .8rem 0;
   color: #FFF;
   text-shadow: 2px 2px 5px #0009;
-  margin-top: 5rem;
+  margin-top: 9rem;
 }
 @media (max-width: 576px) {
-  .hero-wrapper h1.banner {
+  h1.banner {
     font-size: 2.3rem;
   }
 }
-.hero-wrapper h4.sub {
+h4.sub {
   color: white;
   text-align: center;
   text-shadow: 2px 2px 5px #0009;
   font-size: 1.6rem;
 }
-.hero-wrapper .quote-wrapper {
+.quote-wrapper {
   height: 100%;
   align-items: flex-end;
   display: flex;
 }
-.hero-wrapper .quote-wrapper h6 {
+.quote-wrapper h6 {
   color: #14B278;
   width: 410px;
   background: white;
@@ -257,10 +239,10 @@ img.avatar {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 @media (max-width: 576px) {
-  .hero-wrapper .quote-wrapper h6 {
+  .quote-wrapper h6 {
     font-size: 0.9rem;
   }
-  .hero-wrapper .quote-wrapper {
+  .quote-wrapper {
     display: none;
   }
 }
@@ -405,41 +387,6 @@ img.avatar {
     margin-right: 0;
   }
 }
-
-#mc_embed_signup div {
-  font-family: avenirNext;
-  color: white;
-  text-align: left;
-}
-#mc_embed_signup .mc-field-group {
-  display: flex;
-  flex-direction: column;
-  margin: 1rem 0;
-  position: relative;
-}
-#mc-embedded-subscribe {
-  border: none;
-  padding: .5rem .4rem .4rem .4rem;
-  border-radius: 5px;
-  color: white;
-  font-family: avenirNext;
-}
-#mce-EMAIL {
-  border: none;
-  background-color: white !important;
-  height: 19px;
-  padding: 1px;
-}
-.mce_inline_error {
-  font-size: 0.6rem;
-  /* position: absolute; */
-  bottom: -30px;
-  right: -8px;
-}
-.indicates-required {
-  font-size: 0.7rem;
-}
-
 #footer {
   height: 48px;
   display: flex;

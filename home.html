@@ -14,8 +14,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <script src="https://www.paypal.com/sdk/js?client-id=AVPGTF5B8p3UIwq57oF_zqaGl5oaM1NQx2BzPTeymCwMReP9jGCmw27_VBxq1PcSm3wne4NLqT9EEw3a&currency=GBP"></script>
+
     <link rel="stylesheet" href="./styles/views/home.css">
-    <!-- <link href="https://cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css"> -->
+    <link href="https://cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
 
     <title>Ella&Nicki</title>
   </head>
@@ -43,7 +44,6 @@
           </div>
           
           <div class="col-lg-6 col-4 brand-wrapper">
-            <!-- <img src="./assets/svg/brand-2.svg" alt=""> -->
             <h3 class="brand">Ella&Nicki</h3>
           </div>
 
@@ -444,94 +444,7 @@
     </div>  
   </body>
   <script src="./js/hero.js"></script>
-  <script type="text/javascript">
 
-    var state = false;
-
-    var clickMenu = function() {
-      var menu = document.getElementById('menu');
-      var menuInner = document.getElementsByClassName('menu-outer-wrapper')[0];
-      var greyedOut = document.getElementsByClassName('greyed-out')[0];
-      var icon = document.getElementById('menu-icon');
-      if(state === false) {
-        menu.style.width = '100%';
-        menuInner.style.left = '0px';
-        greyedOut.style.opacity = '.3';
-        state = true;
-        icon.classList = ['fas fa-angle-double-left'];
-      } else {
-        menu.style.width = '';
-        menuInner.style.left = '-430px';
-        greyedOut.style.opacity = '0';
-        state = false;
-        icon.classList = ['fas fa-angle-double-right'];
-      }
-    }
-
-  </script>
-  <script type="text/javascript">
-    let open = false;
-    const innerModal = document.getElementById('modal-dialogue');
-    const body = document.getElementsByTagName('body')[0];
-    const modal = document.getElementById('modal');
-    const button = document.getElementById('donate-button');
-    const close = document.getElementsByClassName('close-icon')[0];
-
-    var openModal = function() {
-      if(!open) {
-        modal.style.display = 'flex';
-        body.className = 'modal-open';
-        setTimeout( () => {
-          modal.className = 'fade-in';
-          innerModal.className = 'modal-scroll-view';
-        }, 10);
-      } else {
-        
-        body.className = '';
-        setTimeout( () => {
-          modal.className = '';
-          innerModal.className = '';
-        }, 1);
-        setTimeout( () => {
-          modal.style.display = 'none';
-        }, 500);
-      }
-      open = !open;
-    }
-
-    var preventClick = function(event) {
-      event.stopPropagation();
-    }
-
-    button.addEventListener('click', openModal);
-    modal.addEventListener('click', openModal);
-    innerModal.addEventListener('click', preventClick);
-    close.addEventListener('click', openModal);
-
-  </script>
-  <script>
-
-    let input = document.getElementById('donation-amt');
-
-    paypal.Buttons({
-      createOrder: function(data, actions) {
-          // Set up the transaction
-          return actions.order.create({
-            purchase_units: [{
-              amount: {
-                value: input.value
-              }
-            }]
-          });
-        },
-        onApprove: function(data, actions) {
-          // Capture the funds from the transaction
-          return actions.order.capture().then(function(details) {
-            // Show a success message to your buyer
-            alert('Transaction completed by ' + details.payer.name.given_name);
-          });
-        }
-      }).render('.paypal-buttons');
-  </script>
+  <script src="./js/donate.js"></script>
   <script src="./js/global.js"></script>
 </html>
