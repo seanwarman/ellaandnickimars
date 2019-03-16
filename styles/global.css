@@ -71,7 +71,6 @@ h5 {
 }
 h6 {
   font-family: avenirNextItalic;
-  font-style: italic;
   font-size: 1rem;
 }
 @media (max-width: 576px) {
@@ -94,6 +93,12 @@ a {
 a:hover {
   cursor: pointer;
 }
+.hide-me { 
+  opacity: 0;
+}
+body {
+  transition: opacity 1s;
+}
 
 /* When it comes to styling the fonts add 
 the exact fonts, sizes and weight of each 
@@ -108,11 +113,11 @@ h1 - The main banner font "Building a Martian House"
 h2 - "Project Partners and Funders" (also "Donate").
 h3 - Elevator pitch font
 h4 - "Project Timeline" text, this will be light weight
-	 and also used for the side panel headings. (multi-sized)
+   and also used for the side panel headings. (multi-sized)
 h5 - Partner names (bold capitals).
 h6 - This could be the quote font in italics (we'll 
-	 make this multi-sized as it'll be used for the
-	 conversation quote as well).
+   make this multi-sized as it'll be used for the
+   conversation quote as well).
 
 We might need a seperate class for the Ella&Nicki brand.
 That's ok because it'll only be used once.
@@ -134,26 +139,41 @@ for the main heading though.
 }
 .plx-group {
   transform-style: preserve-3d;
-  height: 100vh;
+  position: relative;
+}
+.plx-layer {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
+.plx-close {
+  transform: translateZ(10px);
 }
 .plx-fore {
   transform: translateZ(0px);
 }
 .plx-mid {
-  transform: translateZ(-300px);  
+  transform: translateZ(-300px) scale(2);  
 }
 .plx-back {
-  transform: translateZ(-600px);
+  transform: translateZ(-600px) scale(3);
 }
 .body-container {
-  max-width: 780px;
-  padding-bottom: 7rem;
-  padding-top: 7rem;
+  /* display: grid; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  padding: 5rem 0 8rem 0;
 }
 .padder {
-  /* display: flex; */
   padding-top: 3rem;
 }
+
+
+
+
+
 .middler {
   display: flex;
   flex-direction: column;
@@ -177,7 +197,7 @@ for the main heading though.
   text-align: right;
 }
 img.avatar {
-  width: 150px;
+  width: 230px;
   border-radius: 50%;
 }
 /* The hero image will be redefined in the views styles */
@@ -353,23 +373,25 @@ img.avatar {
 }
 #navbar button {
   background: none;
-  border: none;
   font-size: 1rem;
   font-weight: 300;
   padding: 0;
-  color: inherit;
   transition: color .2s;
+  border-radius: 7px;
+  color: #14b278;
+  padding-right: 0.6rem;
+  border: none;
+}
+#navbar a {
+  text-decoration: none;
+  color: inherit;
 }
 #navbar button:hover {
   cursor: pointer;
-  color: #3c6378;
 }
 #navbar i {
-  background: #14B278;
-  color: white;
   padding: .3rem .4rem;
   border-radius: 5px;
-  margin-right: .5rem;
 }
 @media (max-width: 576px) {
   #navbar span {
@@ -383,6 +405,41 @@ img.avatar {
     margin-right: 0;
   }
 }
+
+#mc_embed_signup div {
+  font-family: avenirNext;
+  color: white;
+  text-align: left;
+}
+#mc_embed_signup .mc-field-group {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0;
+  position: relative;
+}
+#mc-embedded-subscribe {
+  border: none;
+  padding: .5rem .4rem .4rem .4rem;
+  border-radius: 5px;
+  color: white;
+  font-family: avenirNext;
+}
+#mce-EMAIL {
+  border: none;
+  background-color: white !important;
+  height: 19px;
+  padding: 1px;
+}
+.mce_inline_error {
+  font-size: 0.6rem;
+  /* position: absolute; */
+  bottom: -30px;
+  right: -8px;
+}
+.indicates-required {
+  font-size: 0.7rem;
+}
+
 #footer {
   height: 48px;
   display: flex;

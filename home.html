@@ -13,26 +13,36 @@
     <link href="https://fonts.googleapis.com/css?family=Comfortaa:700" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <!-- <script src="https://www.paypal.com/sdk/js?client-id=AVPGTF5B8p3UIwq57oF_zqaGl5oaM1NQx2BzPTeymCwMReP9jGCmw27_VBxq1PcSm3wne4NLqT9EEw3a&currency=GBP"></script> -->
+    <script src="https://www.paypal.com/sdk/js?client-id=AVPGTF5B8p3UIwq57oF_zqaGl5oaM1NQx2BzPTeymCwMReP9jGCmw27_VBxq1PcSm3wne4NLqT9EEw3a&currency=GBP"></script>
     <link rel="stylesheet" href="./styles/views/home.css">
     <!-- <link href="https://cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css"> -->
 
     <title>Ella&Nicki</title>
   </head>
-  <body>
+  <body class="hide-me">
     
     <!-- Navbar -->
     <div id="navbar">
       <div class="container-fluid">
         <div class="row">
+          <div class="col-lg-6 col-8">
 
-          <h4 class="col-6">
             <button onclick="clickMenu()">
               <i id="menu-icon" class="fas fa-angle-double-right"></i>
               <span>Projects</span>
             </button>
-          </h4>
-          <div class="col-6 brand-wrapper">
+            <button><a target="_blank" href="https://ellaandnicki.wordpress.com/">
+                <i id="menu-icon" class="fab fa-wordpress"></i>
+              <span>Blog</span>
+            </a></button>
+            <button id="donate-button">
+              <i class="far fa-smile-beam"></i>
+              <span>Donate</span>
+            </button>
+              
+          </div>
+          
+          <div class="col-lg-6 col-4 brand-wrapper">
             <!-- <img src="./assets/svg/brand-2.svg" alt=""> -->
             <h3 class="brand">Ella&Nicki</h3>
           </div>
@@ -176,7 +186,7 @@
       </div>
       <!-- <div class="greyed-out" style="width: 0; height: 0;">
       </div> -->
-      <div class="greyed-out">
+      <div onclick="clickMenu()" class="greyed-out">
       </div>
     </div>
     <!-- End menu -->
@@ -186,7 +196,7 @@
         <div class="modal-content">
           <div class="modal-body">
             <div class="modal-close"><i class="fas fa-times close-icon"></i></div>
-            <p class="payment-icon-wrapper"><img src="./assets/svg/mars-black-title.svg" alt="mars-icon"></p>
+            <p class="payment-icon-wrapper"><img src="assets/pictures/icon-mountains-of-mars.png" alt="mountains-of-mars-icon"  /></p>
             <h2>Thank you for your donation!</h2>
             <p>
               All proceeds will go directly to the
@@ -202,91 +212,113 @@
       </div>
     </div>
 
-    <!-- hero start -->
-    <div class="hero-wrapper">
-      <div class="background-wrapper">
-        <div id="background" class="hero"></div>  
+    <div id="home" class="plx-page">
+      <div class="mars-landscape"></div>
+      <div class="hero plx-group">
+        <div class="plx-layer plx-back mars-hills"></div>
+        <div class="plx-layer plx-mid mars-people"></div>
+        <div class="plx-layer main-title-wrapper plx-back">
+          <div class="main-title">
+            <span class="word">
+              <div class="title-letter">B</div>
+              <div class="title-letter">U</div>
+              <div class="title-letter">I</div>
+              <div class="title-letter">L</div>
+              <div class="title-letter">D</div>
+              <div class="title-letter">I</div>
+              <div class="title-letter">N</div>
+              <div class="title-letter">G</div>
+            </span>
+            <span class="word"><div class="title-letter">A</div></span>     
+            <span class="word">
+              <div class="title-letter">M</div>
+              <div class="title-letter">A</div>
+              <div class="title-letter">R</div>
+              <div class="title-letter">T</div>
+              <div class="title-letter">I</div>
+              <div class="title-letter">A</div>
+              <div class="title-letter">N</div>
+            </span>
+            <span class="word">
+              <div class="title-letter">H</div>
+              <div class="title-letter">O</div>
+              <div class="title-letter">U</div>
+              <div class="title-letter">S</div>
+              <div class="title-letter">E</div>
+            </span>
+          </div>
+          <!-- <div class="quote-wrapper">
+            <h6>
+              "Our descendants on Mars will know the value of a patch of
+              green. And if a blade of grass is priceless, what is the
+              value of a human being?"<br>
+              <span class="quote-name"> - Carl Sagan - Pale Blue Dot: A Vision of the Human Future in Space</span>
+            </h6>
+          </div> -->
+        </div>
+      </div>
+      <div class="container-fluid plx-fore about">
+        <div class="body-container container">
+          <div class="row">
+            <div class="col-12 weak-center">
+              <img
+              class="head-icon"
+              src="assets/pictures/house-sketches/sketch13.jpg"
+              alt="mars-house-sketch"
+              />
+            </div>
+            <div class="col-12 weak-center padder">
+              <h2>About</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 padder">
+              <p class="pitch">
+                We’re building a Martian House. It’s going to be a real life house that you can step into and imagine how we might live on another planet.
+              </p>
+              <p class="pitch padder">
+                It’s often said we have more technology in our pockets nowadays than took NASA to the moon. This project is about seeing what is possible and how far we can get with what we have here and now.
+              </p>
+              <p class="pitch padder">
+                Our house will be built by many people coming together and sharing their knowledge, skills and enthusiasm - working with space scientists, engineers, architects and the local community.
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-5 col-12 weak-center padder middler">
+              <img
+              class="avatar"
+              src="assets/pictures/avatar-ellaandnicki2.png"
+              alt="ella-and-nicki"
+              />
+            </div>
+            <div class="col-md-7 col-12 padder">
+              <p class="about">
+                  Ella Good and Nicki Kent are artists based in 
+                  Bristol, UK.      
+              </p>
+              <p class="about">
+                  We make projects about the future that invite people 
+                  to come and take part.
+              </p>
+              <p class="about">
+                  In 2014 we started a ten year series about Mars, 
+                  Earth and the future. We’re making lots of projects 
+                  exploring different aspects of what going to Mars might 
+                  make people think about - from imagining a whole new 
+                  society to sustainable living here on Earth.
+              </p>
+              <p class="about">
+                  Have a look around our website to see how you can get 
+                  involved in our current project.
+              </p>
+            </div>
+          </div>
+        </div> 
       </div>
       
-      <div class="midground-wrapper">
-        <div id="midground" class="hero"></div>  
-      </div>
-      
-      <div class="foreground-wrapper">
-        <div id="foreground" class="hero"></div>
-      </div>
-      
-      <!-- TODO The donate button needs to bring up a modal
-      or open a new page that allows the user to pay into
-      a paypal account -->
-      <div class="donate-wrapper">
-        <button id="donate-button">Donate</button>  
-      </div>  
-      <h1 class="banner">Building a Martian House</h1>
-      <div class="quote-wrapper">
-        <h6>
-          "Our descendants on Mars will know the value of a patch of 
-          green. And if a blade of grass is priceless, what is the 
-          value of a human being?"<br>
-          <span class="quote-name"> - Carl Sagan - Pale Blue Dot: A Vision of the Human Future in Space</span>
-        </h6>
-      </div> 
-    </div>
-    <!-- end hero -->
-
-    <div id="home"> 
-      <div class="container body-container">
-        <div class="row">
-          <div class="col-12 weak-center">
-            <img 
-              class="head-icon" 
-              src="assets/svg/mars-black-title.svg" 
-              alt="mountains-of-mars-icon" 
-            />
-          </div>
-          <div class="col-12 weak-center padder">
-            <h2>About the Project</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-12 padder">
-            <h3>
-              Elevator pitch, here we are reading the elevator pitch, 
-              I wish I could be involved in this great project. How 
-              do I get involved, how do I hep these amazing artist. 
-              I could do it with all my cash, yes that's it I'll give 
-              these lovely artists all my hard cash. Hmm yes this is 
-              interesting and arresting.
-            </h3>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-3 col-12 weak-center padder middler">
-            <img 
-              class="avatar" 
-              src="assets/pictures/avatar-ellaandnicki2.png" 
-              alt="ella-and-nicki" 
-            />
-          </div>
-          <div class="col-md-9 col-12 padder middler">
-            <p class="about">
-              This is Ella and Nicki, aren't they both so 
-              interesting and admirable but poor, very poor. Give 
-              them money, all your money, they like money but you 
-              don't why don't you give them your money, then 
-              everyone will be happy.
-            </p>
-            <p class="about">
-              Then some more interesting stuff about them and how 
-              popular and amazing (but poor) they are and how 
-              they're going to make some incredible stuff blah 
-              blah.
-            </p>
-          </div>
-        </div>
-      </div> 
       <!-- END section 1 -->
-      <div class="container-fluid green">
+      <div class="container-fluid green plx-fore">
         <div class="container body-container">
           <div class="row">
             <div class="col-12 weak-center padder">
@@ -328,31 +360,34 @@
           </div>
         </div>
       </div>
-      <div class="container body-container">
-        <div class="row">
-          <div class="col-12 weak-center">
-            <img
-            class="head-icon"
-            src="assets/pictures/icon-mountains-of-mars.png"
-            alt="mountains-of-mars-icon"
-            />
+      <div class="press container-fluid plx-fore">
+        <div class="container body-container">
+          <div class="row">
+            <div class="col-12 weak-center">
+              <img
+              class="head-icon"
+              src="assets/pictures/house-sketches/sketch1.jpg" 
+              alt="mars-house-sketch"
+              />
+            </div>
+            <div class="col-12 weak-center padder">
+              <h2>Recent Press Coverage</h2>
+            </div>
           </div>
-          <div class="col-12 weak-center padder">
-            <h2>Recent Press Coverage</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-7 col-12 middler padder swap-2">
-            <h6 class="big-quote">
-              “We have already identified five key things to do, taking inspiration from research facilities such as Biosphere 2 and the Mars Desert Research Station in Utah, US.”
-            </h6>
-          </div>
-          <div class="col-md-5 col-12 middler padder swap-1">
-            <a target="_blank" href="https://theconversation.com/five-things-you-need-to-do-to-build-a-home-on-mars-97742"><img class="card" src="./assets/pictures/press-the-conversation.png" alt="press"></a>
+          <div class="row">
+            <div class="col-md-7 col-12 middler padder swap-2">
+              <h6 class="big-quote">
+                "We have already identified five key things to do, taking inspiration from research facilities such as Biosphere 2 and the Mars Desert Research Station in Utah, US."
+              </h6>
+            </div>
+            <div class="col-md-5 col-12 middler padder swap-1">
+              <a target="_blank" href="https://theconversation.com/five-things-you-need-to-do-to-build-a-home-on-mars-97742"><img class="card" src="./assets/pictures/press-the-conversation.png" alt="press"></a>
+            </div>
           </div>
         </div>
       </div>
-      <div id="contact" class="container-fluid contact">
+      
+      <div id="contact" class="container-fluid contact plx-fore">
         <div class="container">
           <div class="row middler">
             <div class="col-12 weak-center padder middler">
@@ -363,19 +398,12 @@
               <p>We like hearing from people.</p>
               <p><a href="mailto:ellaandnicki@gmail.com">ellaandnicki@gmail.com</a></p>
 
-
-
               <!-- Begin Mailchimp Signup Form -->
-            <!--   <div id="mc_embed_signup">
+              <div id="mc_embed_signup">
                 <form action="https://ellaandnicki.us8.list-manage.com/subscribe/post?u=dcc5ac61143953ee475ef2177&amp;id=911ec2fd3e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                   <div id="mc_embed_signup_scroll">
                     <p>You can also subscribe to our email list here...</p>
                     <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
-                    <div class="mc-field-group">
-                      <label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
-                      </label>
-                      <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
-                    </div>
                     <div class="mc-field-group">
                       <label for="mce-FNAME">First Name </label>
                       <input type="text" value="" name="FNAME" class="" id="mce-FNAME">
@@ -384,29 +412,34 @@
                       <label for="mce-LNAME">Last Name </label>
                       <input type="text" value="" name="LNAME" class="" id="mce-LNAME">
                     </div>
+                    <div class="mc-field-group">
+                      <label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
+                      </label>
+                      <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+                    </div>
                     <div id="mce-responses" class="clear">
                       <div class="response" id="mce-error-response" style="display:none"></div>
-                      <div class="response" id="mce-success-response" style="display:none"></div> -->
-                    </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                  <!--   <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_dcc5ac61143953ee475ef2177_911ec2fd3e" tabindex="-1" value=""></div>
+                      <div class="response" id="mce-success-response" style="display:none"></div>
+                    </div> <!--    real people should not fill this in and expect good things - do not remove this or risk form bot signups -->
+                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_dcc5ac61143953ee475ef2177_911ec2fd3e" tabindex="-1" value=""></div>
                     <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
                   </div>
                 </form>
               </div>
-              <script type='text/javascript' src='https://s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script> -->
+              <script type='text/javascript' src='https://s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
               <!--End mc_embed_signup-->
 
             </div>
           </div>
         </div>
       </div>
-
       <div id="footer" class="container-fluid">
         <a target="_blank" href="https://twitter.com/ellaandnicki"><i class="fab fa-twitter"></i></a>
         <a target="_blank" href="https://www.facebook.com/groups/1741972649361191/"><i class="fab fa-facebook-f"></i></a>
         <a target="_blank" href="https://www.instagram.com/ellaandnicki/"><i class="fab fa-instagram"></i></a>
         <a target="_blank" href="https://www.youtube.com/channel/UCtcxLadKMYBc8YRAdE7_IUA"><i class="fab fa-youtube"></i></a>
       </div>
+    </div>
       
     </div>  
   </body>
@@ -436,7 +469,6 @@
     }
 
   </script>
-
   <script type="text/javascript">
     let open = false;
     const innerModal = document.getElementById('modal-dialogue');
@@ -500,5 +532,6 @@
           });
         }
       }).render('.paypal-buttons');
-    </script>
+  </script>
+  <script src="./js/global.js"></script>
 </html>
