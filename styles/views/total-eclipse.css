@@ -1,0 +1,11 @@
+.hero {
+    background-image: url('../../assets/pictures/total-eclipse-window-sign.jpg');
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    height: 630px;
+    padding-top: 48px;
+    background-repeat: no-repeat;
+    background-position: right;
+  }

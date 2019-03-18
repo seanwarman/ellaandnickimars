@@ -193,6 +193,9 @@ for the main heading though.
 .blue {
   background-color: #4d99cc;
 }
+.orange {
+  background-color: #fd7b25
+}
 .weak-center {
   text-align: center;
 }
@@ -302,6 +305,10 @@ h4.sub {
   margin-bottom: 1rem;
   align-items: center;
   display: flex;
+  text-decoration: none;
+}
+#menu .menu-outer-wrapper .item-wrapper:hover p {
+  text-decoration: underline;
 }
 #menu .menu-outer-wrapper .circle-wrapper {
   margin-left: 1rem;
@@ -310,7 +317,9 @@ h4.sub {
   height: 67px;
   width: 67px;
   border-radius: 50%;
-  border: 1px solid #707070;
+  /* border: 1px solid #707070; */
+  background-size: cover;
+  background-position: center;
 }
 #menu .menu-outer-wrapper p {
   padding: 0 1rem;
@@ -326,7 +335,7 @@ h4.sub {
   transition: opacity .4s;
   position: fixed;
   z-index: 1;
-  pointer-events: none;
+  /* pointer-events: none; */
 }
 /* End Menu Styles */
 #navbar {

@@ -29,11 +29,13 @@ var clickMenu = function() {
   if(state === false) {
     menu.style.left = '0px';
     greyedOut.style.opacity = '.3';
+    greyedOut.style.pointerEvents = 'unset';
     state = true;
     icon.classList = ['fas fa-angle-double-left'];
   } else {
     menu.style.left = '-430px';
     greyedOut.style.opacity = '0';
+    greyedOut.style.pointerEvents = 'none';
     state = false;
     icon.classList = ['fas fa-angle-double-right'];
   }
