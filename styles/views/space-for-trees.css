@@ -42,41 +42,7 @@
   #space-for-trees .item-3 {
     grid-row: 4/5;
   }
-
 }
-#space-for-trees .pic-one {
-  background-image: url('../../assets/pictures/space-for-trees-planting-sign.jpg');
-  background-position: top;
-}
-#space-for-trees .pic-two {
-  background-image: url('../../assets/pictures/space-for-trees-ella-nicki.jpg');
-  background-position: top;
-}
-#space-for-trees .pic-three {
-  background-image: url('../../assets/pictures/space-for-trees-group.jpg');
-  background-position: center;
-}
-#space-for-trees .pic-four {
-  background-image: url('../../assets/pictures/space-for-trees-nicki.jpg');
-  background-position: center;
-}
-#space-for-trees .gallery {
-  overflow: hidden;
-  background-repeat: no-repeat;
-  background-size: 460px;
-  margin-top: 1.5rem;
-  height: 300px;
-  /* max-width: 50%; */
-  position: relative;
-  /* width: 100%; */
-  /* margin-right: 1.5rem; */
-  /* margin-left: 1.5rem; */
-}
-/* @media (min-width: 576px) {
-  #space-for-trees .gallery {
-    flex: 1; 
-  }
-} */
 #space-for-trees .med-image {
   height: 400px;
 }

@@ -77,6 +77,9 @@ h6 {
   h3, h4, h5, h6, p, h6.big-quote {
     font-size: 1em !important;
   }
+  .brand {
+    padding-top: 0.2rem;
+  }
   small {
     font-size: 0.7rem !important;
   }
@@ -101,6 +104,34 @@ body {
 }
 .hero {
   height: 100vh !important;
+}
+.bg-image {
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.gallery-wrapper {
+  padding: 1px;
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+.gallery {
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: 460px;
+  height: 300px;
+  position: relative;
+  background-size: cover;
+}
+
+@media (max-width: 768px) {
+  .gallery-wrapper {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
 }
 
 /* When it comes to styling the fonts add 
@@ -172,11 +203,6 @@ for the main heading though.
 .padder {
   padding-top: 3rem;
 }
-
-
-
-
-
 .middler {
   display: flex;
   flex-direction: column;
@@ -217,7 +243,7 @@ h1.banner {
   text-shadow: 2px 2px 5px #0009;
   margin-top: 9rem;
 }
-@media (max-width: 576px) {
+@media (max-width: 992px) {
   h1.banner {
     font-size: 2.3rem;
   }

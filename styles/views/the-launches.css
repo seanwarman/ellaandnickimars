@@ -17,30 +17,6 @@
   background-repeat: no-repeat;
   height: 381px;
 }
-#the-launches .gallery {
-  overflow: hidden;
-  background-repeat: no-repeat;
-  background-size: 460px;
-  margin-top: 1.5rem;
-  height: 300px;
-  position: relative;
-}
-#the-launches .pic-one {
-  background-image: url('../../assets/pictures/the-launches-celebration.jpg');
-  background-position: 50% 75%;
-}
-#the-launches .pic-two {
-  background-image: url('../../assets/pictures/the-launches-news.png');
-  background-position: top;
-}
-#the-launches .pic-three {
-  background-image: url('../../assets/pictures/the-launches-above-park.png');
-  background-position: center;
-}
-#the-launches .pic-four {
-  background-image: url('../../assets/pictures/the-launches-earth-curve.png');
-  background-position: center;
-}
 #the-launches .med-image-two {
   height: 330px;
   overflow: hidden;

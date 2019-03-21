@@ -157,6 +157,10 @@
   background:#F0CA4D; 
   clear:left;
 }
+#home #mc_embed_signup_scroll {
+  color: white;
+  font-family: avenirNext;
+}
 #home #mc_embed_signup .asterisk {
   color: #e24a4a;
 }

@@ -5,8 +5,6 @@ const modal = document.getElementById('modal');
 const button = document.getElementById('donate-button');
 const close = document.getElementsByClassName('close-icon')[0];
 
-console.log(button);
-
 var openModal = function() {
   if(!open) {
     modal.style.display = 'flex';
@@ -37,7 +35,6 @@ button.addEventListener('click', openModal);
 modal.addEventListener('click', openModal);
 innerModal.addEventListener('click', preventClick);
 close.addEventListener('click', openModal);
-
 
 let input = document.getElementById('donation-amt');
 
