@@ -104,6 +104,12 @@ body {
 }
 .hero {
   height: 100vh !important;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-size: cover;
+  padding-top: 48px;
+  background-repeat: no-repeat;
 }
 .bg-image {
   width: 100%;
@@ -421,6 +427,35 @@ h4.sub {
   #navbar i {
     margin-right: 0;
   }
+}
+#contact.contact {
+  padding-bottom: 3rem;
+  background-color: #F0CA4D;
+}
+#contact  .contact-wrapper {
+  max-width: 400px;
+}
+#contact h2, #contact p {
+  color: white;
+}
+
+#mc_embed_signup{
+  background:#F0CA4D; 
+  clear:left;
+}
+#mc_embed_signup_scroll {
+  color: white;
+  font-family: avenirNext;
+}
+#mc_embed_signup .asterisk {
+  color: #e24a4a;
+}
+#contact #mc_embed_signup .button {
+  background-color: #14B278;
+}
+
+#mc_embed_signup #mc-embedded-subscribe-form div.mce_inline_error {
+  background-color: unset !important;
 }
 #footer {
   height: 48px;
