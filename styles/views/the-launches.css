@@ -11,11 +11,15 @@
 }
 #the-launches .intro-image {
   overflow: hidden;
-  background-image: url('../../assets/pictures/the-launches-launch.jpg');
-  background-position: top;
-  background-size: 240px;
+  background-image: url(../../assets/pictures/the-launches-launch.jpg);
+  background-position: center;
+  background-size: cover;
   background-repeat: no-repeat;
-  height: 381px;
+}
+@media (max-width: 576px) {
+  #the-launches .intro-image {
+    height: 381px;
+  }
 }
 #the-launches .med-image-two {
   height: 330px;

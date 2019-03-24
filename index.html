@@ -4,19 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./styles/global.css">
-    <link rel="stylesheet" href="./styles/layout.css">
-    <link rel="stylesheet" href="./styles/modal.css">
-    <link rel="stylesheet" href="./assets/dependencies/fontawesome/css/all.min.css">
-    <script src="./assets/dependencies/csi.js"></script>
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/layout.css">
+    <link rel="stylesheet" href="styles/modal.css">
+    <link rel="stylesheet" href="assets/dependencies/fontawesome/css/all.min.css">
+    <script src="assets/dependencies/csi.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Rubik:300" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Comfortaa:700" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <script src="https://www.paypal.com/sdk/js?client-id=AVPGTF5B8p3UIwq57oF_zqaGl5oaM1NQx2BzPTeymCwMReP9jGCmw27_VBxq1PcSm3wne4NLqT9EEw3a&currency=GBP"></script>
 
-    <link rel="stylesheet" href="./styles/views/home.css">
-    <link href="https://cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="styles/views/home.css">
 
     <title>Ella&Nicki</title>
   </head>
@@ -26,20 +25,20 @@
     <div id="navbar">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-lg-6 col-8">
+          <div class="col-lg-6 col-8 nav-link-wrapper">
 
-            <button onclick="clickMenu()">
+            <div class="nav-link" onclick="clickMenu()">
               <i id="menu-icon" class="fas fa-angle-double-right"></i>
               <span>Projects</span>
-            </button>
-            <button><a target="_blank" href="https://ellaandnicki.wordpress.com/">
+            </div>
+            <a class="nav-link" target="_blank" href="https://ellaandnicki.wordpress.com/">
                 <i id="menu-icon" class="fab fa-wordpress"></i>
               <span>Blog</span>
-            </a></button>
-            <button id="donate-button">
+            </a>
+            <div class="nav-link" id="donate-button">
               <i class="far fa-smile-beam"></i>
               <span>Donate</span>
-            </button>
+            </div>
               
           </div>
           
@@ -61,9 +60,9 @@
             <div class="underline"></div>
           </div>
   
-          <a href="./index.html" class="item-wrapper">
+          <a href="index.html" class="item-wrapper">
             <div class="circle-wrapper">
-              <div class="circle" style="background-image: url('./assets/pictures/menu-icons/hero-building-a-martian-house-main.jpg');">
+              <div class="circle" style="background-image: url('assets/pictures/menu-icons/hero-building-a-martian-house-main.jpg');">
               </div>
             </div>
             <p>
@@ -71,9 +70,9 @@
             </p>
           </a>
   
-          <a href="./filmclub.html" class="item-wrapper">
+          <a href="filmclub.html" class="item-wrapper">
             <div class="circle-wrapper">
-              <div class="circle" style="background-image: url('./assets/pictures/menu-icons/film-club-rocket-landed.jpg'); background-position: unset;">
+              <div class="circle" style="background-image: url('assets/pictures/menu-icons/film-club-rocket-landed.jpg'); background-position: unset;">
               </div>
             </div>
             <p>
@@ -82,9 +81,9 @@
             </p>
           </a>
   
-          <a href="./spacefortrees.html" class="item-wrapper">
+          <a href="spacefortrees.html" class="item-wrapper">
             <div class="circle-wrapper">
-              <div class="circle" style="background-image: url('./assets/pictures/menu-icons/space-for-trees-sign.jpg');">
+              <div class="circle" style="background-image: url('assets/pictures/menu-icons/space-for-trees-sign.jpg');">
               </div>
             </div>
             <p>
@@ -92,9 +91,9 @@
             </p>
           </a>
   
-          <a href="./thelaunches.html" class="item-wrapper">
+          <a href="thelaunches.html" class="item-wrapper">
             <div class="circle-wrapper">
-              <div class="circle" style="background-image: url('./assets/pictures/menu-icons/the-launches-sunrise.png');">
+              <div class="circle" style="background-image: url('assets/pictures/menu-icons/the-launches-sunrise.png');">
               </div>
             </div>
             <p>
@@ -102,9 +101,9 @@
             </p>
           </a>
   
-          <a href="./totaleclipseofthehead.html" class="item-wrapper">
+          <a href="totaleclipseofthehead.html" class="item-wrapper">
             <div class="circle-wrapper">
-              <div class="circle" style="background-image: url('./assets/pictures/menu-icons/total-eclipse-hero.jpg');">
+              <div class="circle" style="background-image: url('assets/pictures/menu-icons/total-eclipse-hero.jpg');">
               </div>
             </div>
             <p>
@@ -112,9 +111,9 @@
             </p>
           </a>
   
-          <a href="./adecadewithmars.html" class="item-wrapper">
+          <a href="adecadewithmars.html" class="item-wrapper">
             <div class="circle-wrapper">
-              <div class="circle" style="background-image: url('./assets/pictures/menu-icons/decade-with-mars-hero.jpg');">
+              <div class="circle" style="background-image: url('assets/pictures/menu-icons/decade-with-mars-hero.jpg');">
               </div>
             </div>
             <p>
@@ -319,7 +318,7 @@
               </h6>
             </div>
             <div class="col-md-5 col-12 middler padder swap-1">
-              <a target="_blank" href="https://theconversation.com/five-things-you-need-to-do-to-build-a-home-on-mars-97742"><img class="card" src="./assets/pictures/press-the-conversation.png" alt="press"></a>
+              <a target="_blank" href="https://theconversation.com/five-things-you-need-to-do-to-build-a-home-on-mars-97742"><img class="card" src="assets/pictures/press-the-conversation.png" alt="press"></a>
             </div>
           </div>
         </div>
@@ -329,7 +328,7 @@
         <div class="container">
           <div class="row middler">
             <div class="col-12 weak-center padder middler">
-              <img src="./assets/pictures/avatar-ellaandnicki.png" alt="ellaandnicki" class="avatar">
+              <img src="assets/pictures/avatar-ellaandnicki.png" alt="ellaandnicki" class="avatar">
             </div>
             <div class="col-12 weak-center padder contact-wrapper">
               <h2>Contact Us</h2>
@@ -381,8 +380,8 @@
       
     </div>  
   </body>
-  <script src="./js/hero.js"></script>
+  <script src="js/hero.js"></script>
 
-  <script src="./js/donate.js"></script>
-  <script src="./js/global.js"></script>
+  <script src="js/donate.js"></script>
+  <script src="js/global.js"></script>
 </html>

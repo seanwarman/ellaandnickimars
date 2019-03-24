@@ -4,19 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./styles/global.css">
-    <link rel="stylesheet" href="./styles/layout.css">
-    <link rel="stylesheet" href="./styles/modal.css">
-    <link rel="stylesheet" href="./assets/dependencies/fontawesome/css/all.min.css">
-    <script src="./assets/dependencies/csi.js"></script>
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/layout.css">
+    <link rel="stylesheet" href="styles/modal.css">
+    <link rel="stylesheet" href="assets/dependencies/fontawesome/css/all.min.css">
+    <script src="assets/dependencies/csi.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Rubik:300" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Comfortaa:700" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <script src="https://www.paypal.com/sdk/js?client-id=AVPGTF5B8p3UIwq57oF_zqaGl5oaM1NQx2BzPTeymCwMReP9jGCmw27_VBxq1PcSm3wne4NLqT9EEw3a&currency=GBP"></script>
   
-    <link rel="stylesheet" href="./styles/views/space-for-trees.css">
-    <link href="https://cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="styles/views/space-for-trees.css">
     <title>Ella&Nicki</title>
   </head>
   <body class="hide-me">
@@ -24,20 +23,20 @@
     <div id="navbar">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-lg-6 col-8">
+          <div class="col-lg-6 col-8 nav-link-wrapper">
 
-            <button onclick="clickMenu()">
+            <div class="nav-link" onclick="clickMenu()">
               <i id="menu-icon" class="fas fa-angle-double-right"></i>
               <span>Projects</span>
-            </button>
-            <button><a target="_blank" href="https://ellaandnicki.wordpress.com/">
+            </div>
+            <a class="nav-link" target="_blank" href="https://ellaandnicki.wordpress.com/">
                 <i id="menu-icon" class="fab fa-wordpress"></i>
               <span>Blog</span>
-            </a></button>
-            <button id="donate-button">
+            </a>
+            <div class="nav-link" id="donate-button">
               <i class="far fa-smile-beam"></i>
               <span>Donate</span>
-            </button>
+            </div>
               
           </div>
           
@@ -59,9 +58,9 @@
             <div class="underline"></div>
           </div>
   
-          <a href="./index.html" class="item-wrapper">
+          <a href="index.html" class="item-wrapper">
             <div class="circle-wrapper">
-              <div class="circle" style="background-image: url('./assets/pictures/menu-icons/hero-building-a-martian-house-main.jpg');">
+              <div class="circle" style="background-image: url('assets/pictures/menu-icons/hero-building-a-martian-house-main.jpg');">
               </div>
             </div>
             <p>
@@ -69,9 +68,9 @@
             </p>
           </a>
   
-          <a href="./filmclub.html" class="item-wrapper">
+          <a href="filmclub.html" class="item-wrapper">
             <div class="circle-wrapper">
-              <div class="circle" style="background-image: url('./assets/pictures/menu-icons/film-club-rocket-landed.jpg'); background-position: unset;">
+              <div class="circle" style="background-image: url('assets/pictures/menu-icons/film-club-rocket-landed.jpg'); background-position: unset;">
               </div>
             </div>
             <p>
@@ -80,9 +79,9 @@
             </p>
           </a>
   
-          <a href="./spacefortrees.html" class="item-wrapper">
+          <a href="spacefortrees.html" class="item-wrapper">
             <div class="circle-wrapper">
-              <div class="circle" style="background-image: url('./assets/pictures/menu-icons/space-for-trees-sign.jpg');">
+              <div class="circle" style="background-image: url('assets/pictures/menu-icons/space-for-trees-sign.jpg');">
               </div>
             </div>
             <p>
@@ -90,9 +89,9 @@
             </p>
           </a>
   
-          <a href="./thelaunches.html" class="item-wrapper">
+          <a href="thelaunches.html" class="item-wrapper">
             <div class="circle-wrapper">
-              <div class="circle" style="background-image: url('./assets/pictures/menu-icons/the-launches-sunrise.png');">
+              <div class="circle" style="background-image: url('assets/pictures/menu-icons/the-launches-sunrise.png');">
               </div>
             </div>
             <p>
@@ -100,9 +99,9 @@
             </p>
           </a>
   
-          <a href="./totaleclipseofthehead.html" class="item-wrapper">
+          <a href="totaleclipseofthehead.html" class="item-wrapper">
             <div class="circle-wrapper">
-              <div class="circle" style="background-image: url('./assets/pictures/menu-icons/total-eclipse-hero.jpg');">
+              <div class="circle" style="background-image: url('assets/pictures/menu-icons/total-eclipse-hero.jpg');">
               </div>
             </div>
             <p>
@@ -110,9 +109,9 @@
             </p>
           </a>
   
-          <a href="./adecadewithmars.html" class="item-wrapper">
+          <a href="adecadewithmars.html" class="item-wrapper">
             <div class="circle-wrapper">
-              <div class="circle" style="background-image: url('./assets/pictures/menu-icons/decade-with-mars-hero.jpg');">
+              <div class="circle" style="background-image: url('assets/pictures/menu-icons/decade-with-mars-hero.jpg');">
               </div>
             </div>
             <p>
@@ -168,13 +167,13 @@
 
       <div class="container-fluid body-container">
         <div class="item-title weak-center">
-          <img class="head-icon" src="./assets/pictures/icon-tree4.png" alt="mars-sketch3" />
+          <img class="head-icon" src="assets/pictures/icon-tree4.png" alt="mars-sketch3" />
         </div>
         <div class="item-title weak-center padder">
           <h2>About</h2>
         </div>
-        <img class="item-1 padder" src="./assets/pictures/space-for-trees-comparison-1.jpg" alt="planting-trees-1">
-        <img class="item-2 padder" src="./assets/pictures/space-for-trees-comparison-2.jpg" alt="planting-trees-2">
+        <img class="item-1 padder" src="assets/pictures/space-for-trees-comparison-1.jpg" alt="planting-trees-1">
+        <img class="item-2 padder" src="assets/pictures/space-for-trees-comparison-2.jpg" alt="planting-trees-2">
         <div class="item-3">
           <p>
             In Winter 2016/17 we ran a project called Space For Trees.
@@ -203,7 +202,7 @@
             <div class="col-12 weak-center">
                <img
               class="head-icon"
-              src="./assets/pictures/icon-tree2.png"
+              src="assets/pictures/icon-tree2.png"
               alt="mars-sketch2"
               /> 
               <h2 class="white padder">The Space For Trees Film</h2>  
@@ -226,23 +225,47 @@
           <div class="col-12 weak-center">
             <img
             class="head-icon"
-            src="./assets/pictures/icon-tree3.png"
+            src="assets/pictures/icon-tree3.png"
             alt="mars-sketch3"
             />
           </div>
         </div>
         <div class="row padder">
           <div class="gallery-wrapper">
-            <div class="gallery" style="background-image: url(./assets/pictures/space-for-trees-planting-sign.jpg); background-position: top;"></div>
+            <div class="gallery" style="background-image: url(assets/pictures/space-for-trees-planting-sign.jpg); background-position: top;">
+              <div class="quote-wrapper">
+                <p>
+                  Planting a tree with the Explore and Create group at Middleton Leisure Center, Leeds.
+                </p>
+              </div>
+            </div>
           </div>
           <div class="gallery-wrapper">
-            <div class="gallery" style="background-image: url(./assets/pictures/space-for-trees-ella-nicki.jpg); background-position: top;"></div>
+            <div class="gallery" style="background-image: url(assets/pictures/space-for-trees-ella-nicki.jpg); background-position: top;">
+              <div class="quote-wrapper">
+                <p>
+                  All the trees were given comemorative plaques.
+                </p>
+              </div>
+            </div>
           </div>
           <div class="gallery-wrapper">
-            <div class="gallery" style="background-image: url(./assets/pictures/space-for-trees-group.jpg); background-position: center;"></div>
+            <div class="gallery" style="background-image: url(assets/pictures/space-for-trees-group.jpg); background-position: center;">
+              <div class="quote-wrapper">
+                <p>
+                  Planting a tree with the Friends of Silver Street Nature Reserve, Midsomer Norton.
+                </p>
+              </div>
+            </div>
           </div>
           <div class="gallery-wrapper">
-            <div class="gallery" style="background-image: url(./assets/pictures/space-for-trees-nicki.jpg); background-position: center;"></div>
+            <div class="gallery" style="background-image: url(assets/pictures/space-for-trees-nicki.jpg); background-position: center;">
+              <div class="quote-wrapper">
+                <p>
+                  Planting a tree with school children in Hull.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -251,7 +274,7 @@
           <div class="container">
             <div class="row middler">
               <div class="col-12 weak-center padder middler">
-                <img src="./assets/pictures/avatar-ellaandnicki.png" alt="ellaandnicki" class="avatar">
+                <img src="assets/pictures/avatar-ellaandnicki.png" alt="ellaandnicki" class="avatar">
               </div>
               <div class="col-12 weak-center padder contact-wrapper">
                 <h2>Contact Us</h2>
@@ -303,6 +326,6 @@
 
     </div> 
   </body>
-  <script src="./js/donate.js"></script>
-  <script src="./js/global.js"></script>
+  <script src="js/donate.js"></script>
+  <script src="js/global.js"></script>
 </html>

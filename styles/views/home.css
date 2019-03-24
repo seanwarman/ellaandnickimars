@@ -74,6 +74,9 @@
   #home .main-title {
     grid-row: 1/2;
   }
+  #home .main-title span.word {
+    padding-right: .5rem;
+  }
 }
 #home .about {
   background-color: white;
