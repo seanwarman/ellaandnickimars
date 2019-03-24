@@ -36,15 +36,13 @@
 }
 #home .hero {
   position: relative;
-  /* z-index: -1; */
 }
 #home .main-title-wrapper {
-  /* color: white; */
   font-size: 5rem;
   font-family: dinAlt;
-  display: grid;
   grid-template-rows: auto auto auto;
   justify-content: center;
+  padding-top: 15%;
 }
 #home .main-title {
   grid-row: 1/3;
@@ -52,10 +50,11 @@
   justify-content: center;
   display: flex;
   flex-wrap: wrap;
+  height: 70px;
 }
 #home .main-title div {
   text-shadow:  0 0 125px #ffffff00, 0 0 125px #ffffff00, 0 0 125px #ffffff00, 0 0 125px #ffffff00, 0 0 125px #ffffff00, 0 0 125px #ffffff00;
-  color: #ffffff00;
+  color: rgba(255, 255, 255, 0);
   transition: all 2.5s cubic-bezier(0.15, 0.9, 0.63, 0.88);
 }
 #home .main-title span.word {
@@ -80,6 +79,12 @@
 }
 #home .about {
   background-color: white;
+}
+#home a.funder-link {
+  text-decoration: none;
+}
+#home a.funder-link:hover {
+  cursor: pointer;
 }
 #home .spotlight-avatar {
   border-radius: 50%;

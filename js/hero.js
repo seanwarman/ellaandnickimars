@@ -22,11 +22,9 @@ var animateTitle = (num, attribute, value) => {
 }
 
 window.addEventListener('load', () => {
-
   animateTitle(0, 'textShadow', '0 0 10px #ffffff');
   setTimeout(animateTitle, 1000, 0, 'textShadow', '0 0 0 #ffffff');
   setTimeout(animateTitle, 1700, 0, 'textShadow', '0 0 0 #ffffff00');
-  setTimeout(animateTitle, 2000, 0, 'color', '#ffffff');
-  
+  setTimeout(animateTitle, 2000, 0, 'color', 'rgba(255, 225, 255, 1)');
 });
 
