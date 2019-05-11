@@ -19,6 +19,7 @@
   background-size: 50%;
   background-repeat: no-repeat;
   background-position: bottom left;
+  display: block;
 }
 #home .mars-people {
   background-image: url('../../assets/pictures/3dhero/hero-building-a-martian-house-foreground.png');
@@ -32,6 +33,16 @@
 @media (max-width: 576px) {
   #home .mars-people {
     background-size: cover;
+  }
+  #home .mars-landscape {
+    background-image: url('../../assets/pictures/3dhero/mobile-hero-building-a-martian-house-background-stretched-2.png');
+  }
+  #home .mars-hills {
+    display: none;
+  }
+  #home .mars-people {
+    background-image: url('../../assets/pictures/3dhero/mobile-hero-building-a-martian-house-foreground.png');
+    background-position: center bottom;
   }
 }
 #home .hero {

@@ -20,6 +20,9 @@
   #the-launches .intro-image {
     height: 381px;
   }
+  .hero {
+    background-image: url('../../assets/pictures/mobile-the-launches-sunrise.png');
+  }
 }
 #the-launches .med-image-two {
   height: 330px;

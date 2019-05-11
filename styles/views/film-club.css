@@ -16,6 +16,7 @@
 @media (max-width: 576px) {
   .hero {
     background-size: cover;
+    background-image: url('../../assets/pictures/mobile-film-club-rocket-landed.png');
   }
 }
 #film-club .big-image {
