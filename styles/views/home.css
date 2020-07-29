@@ -4,7 +4,7 @@
   font-size: 1.6rem;
 }
 #home .mars-landscape {
-  background-image: url('../../assets/pictures/3dhero/hero-building-a-martian-house-background-stretched-2.png');
+  background-image: url('../../assets/pictures/3dhero/hero-building-a-martian-house-background-stretched-2.webp');
   background-size: 2000px;
   background-position: bottom;
   background-repeat: no-repeat;
@@ -13,7 +13,7 @@
   position: absolute;
 }
 #home .mars-hills {
-  background-image: url('../../assets/pictures/3dhero/hero-building-a-martian-house-midground.png');
+  background-image: url('../../assets/pictures/3dhero/hero-building-a-martian-house-midground.webp');
   height: 100%;
   width: 100%;
   background-size: 50%;
@@ -22,7 +22,7 @@
   display: block;
 }
 #home .mars-people {
-  background-image: url('../../assets/pictures/3dhero/hero-building-a-martian-house-foreground.png');
+  background-image: url('../../assets/pictures/3dhero/hero-building-a-martian-house-foreground.webp');
   height: 100%;
   width: 100%;
   background-position: 70% bottom;
@@ -35,13 +35,13 @@
     background-size: cover;
   }
   #home .mars-landscape {
-    background-image: url('../../assets/pictures/3dhero/mobile-hero-building-a-martian-house-background-stretched-2.png');
+    background-image: url('../../assets/pictures/3dhero/mobile-hero-building-a-martian-house-background-stretched-2.webp');
   }
   #home .mars-hills {
     display: none;
   }
   #home .mars-people {
-    background-image: url('../../assets/pictures/3dhero/mobile-hero-building-a-martian-house-foreground.png');
+    background-image: url('../../assets/pictures/3dhero/mobile-hero-building-a-martian-house-foreground.webp');
     background-position: center bottom;
   }
 }
@@ -111,7 +111,7 @@
   }
 }
 #home .ed-marsh {
-  background-image: url('../../assets/pictures/partners-edward-marshall-trust.png');
+  background-image: url('../../assets/pictures/partners-edward-marshall-trust.webp');
   background-size: cover;
   background-position: right;
   background-size: 140%;

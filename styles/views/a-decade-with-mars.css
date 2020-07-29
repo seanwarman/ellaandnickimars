@@ -1,9 +1,9 @@
 .hero {
-    background-image: url(../../assets/pictures/decade-with-mars-hero.jpg);
+    background-image: url(../../assets/pictures/decade-with-mars-hero.webp);
     background-position: center;
 }
 @media (max-width: 576px) {
     .hero {
-        background-image: url(../../assets/pictures/mobile-decade-with-mars-hero.jpg); 
+        background-image: url(../../assets/pictures/mobile-decade-with-mars-hero.webp); 
     }
 }

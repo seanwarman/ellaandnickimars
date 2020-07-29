@@ -1,5 +1,5 @@
 .hero {
-  background-image: url('../../assets/pictures/total-eclipse-window-sign.jpg');
+  background-image: url('../../assets/pictures/total-eclipse-window-sign.webp');
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -10,6 +10,6 @@
 }
 @media (max-width: 576px) {
   .hero {
-    background-image: url('../../assets/pictures/mobile-total-eclipse-window-sign.jpg');
+    background-image: url('../../assets/pictures/mobile-total-eclipse-window-sign.webp');
   }
 }

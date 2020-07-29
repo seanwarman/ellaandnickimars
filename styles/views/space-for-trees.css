@@ -1,5 +1,5 @@
 .hero {
-  background-image: url('../../assets/pictures/space-for-trees-sign.jpg');
+  background-image: url('../../assets/pictures/space-for-trees-sign.webp');
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -33,7 +33,7 @@
 }
 @media (max-width: 576px) {
   .hero {
-    background-image: url('../../assets/pictures/mobile-space-for-trees-sign.jpg');
+    background-image: url('../../assets/pictures/mobile-space-for-trees-sign.webp');
   }
   #space-for-trees .item-1, #space-for-trees .item-2 {
     grid-row: unset;

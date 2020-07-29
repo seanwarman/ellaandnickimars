@@ -1,5 +1,5 @@
 .hero {
-  background-image: url('../../assets/pictures/the-launches-sunrise.png');
+  background-image: url('../../assets/pictures/the-launches-sunrise.webp');
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -11,7 +11,7 @@
 }
 #the-launches .intro-image {
   overflow: hidden;
-  background-image: url(../../assets/pictures/the-launches-launch.jpg);
+  background-image: url(../../assets/pictures/the-launches-launch.webp);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -21,7 +21,7 @@
     height: 381px;
   }
   .hero {
-    background-image: url('../../assets/pictures/mobile-the-launches-sunrise.png');
+    background-image: url('../../assets/pictures/mobile-the-launches-sunrise.webp');
   }
 }
 #the-launches .med-image-two {

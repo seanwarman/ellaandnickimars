@@ -1,5 +1,5 @@
 .hero {
-  background-image: url('../../assets/pictures/film-club-rocket-landed.png');
+  background-image: url('../../assets/pictures/film-club-rocket-landed.webp');
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -16,11 +16,11 @@
 @media (max-width: 576px) {
   .hero {
     background-size: cover;
-    background-image: url('../../assets/pictures/mobile-film-club-rocket-landed.png');
+    background-image: url('../../assets/pictures/mobile-film-club-rocket-landed.webp');
   }
 }
 #film-club .big-image {
-  background-image: url('../../assets/pictures/film-club-rocket.png');
+  background-image: url('../../assets/pictures/film-club-rocket.webp');
   background-size: cover;
   background-position: center;
   height: 400px;
