@@ -4,9 +4,6 @@ import Home from 'Containers/Home'
 
 export default () => (
   <Router>
-    <Switch>
-      <Route path="/" component={Home} />
-      <Route path="/place" component={Home} />
-    </Switch>
+    <Route path="/" component={Home} />
   </Router>
 )
