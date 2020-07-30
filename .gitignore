@@ -1,2 +1,2 @@
-.DS_STORE
-dependencies/
+node_modules
+DS_Store
