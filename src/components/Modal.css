@@ -1,0 +1,134 @@
+#modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 3;
+  display: none;
+  overflow: hidden;
+  outline: 0;
+
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  /* display: block; */
+
+  /* display: flex; */
+  align-items: center;
+  justify-content: center;
+  background-color: #00000000;
+  transition: background-color .5s;
+}
+
+#modal #modal-dialogue {
+  width: 80%;
+  max-width: 560px;
+  position: relative;
+  top: -400px;
+  transition: all .5s;
+  opacity: 0;
+}
+
+#modal .modal-content {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+  pointer-events: auto;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid rgba(0,0,0,.2);
+  border-radius: .3rem;
+  outline: 0;
+}
+
+@media (max-width: 576px) {
+  #modal #modal-dialogue {
+    position: absolute;
+  }
+  #modal .modal-content {
+    border: none;
+    border-radius: 0;
+  }
+}
+
+#modal .modal-body {
+  width: 100%;
+  padding: 3rem;
+}
+
+#modal .modal-body p.payment-icon-wrapper, #modal .modal-body h2 {
+  text-align: center;
+}
+
+#modal .modal-body h2 {
+  margin-bottom: 2rem;
+}
+
+#modal .modal-body p img {
+  height: 230px;
+  margin-top: -26px;
+}
+
+#modal input {
+  margin-bottom: 1rem;
+  width: 100px;
+}
+
+#modal .modal-close {
+  text-align: right;
+  position: relative;
+  bottom: 25px;
+  left: 20px;
+}
+
+/* Opening Animations */
+.modal-open {
+  overflow: hidden;
+}
+#modal #modal-dialogue.modal-scroll-view {
+  top: 0px;
+  opacity: 1;
+}
+#modal.fade-in {
+  background-color: #00000073;
+}
+/* End Animations */
+
+#modal .paypal-buttons {
+  /* padding: 3rem; */
+}
+
+#modal .close-icon {
+  color: #afafaf;
+}
+
+#modal .close-icon:active {
+  color: #5a5a5a;
+}
+
+#modal #donation-amt {
+  font-size: 1rem;
+  border-bottom: 1px solid #636363;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+.fa-pound-sign {
+  font-size: 1.2rem;
+  margin-right: 0.8rem;
+}
+
+@media(max-width: 576px) {
+  #modal #modal-dialogue {
+    width: 100%;
+  }
+  #modal .modal-body p img {
+    height: 160px;
+  }
+}
+

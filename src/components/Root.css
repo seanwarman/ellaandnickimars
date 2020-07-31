@@ -1,0 +1,290 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+*:focus {
+  outline: none;
+}
+@font-face {
+  font-family: avenirNextBold;
+  src:  url('../assets/fonts/avenir-next/AvenirNextLTPro-Bold.otf');
+}
+@font-face {
+  font-family: avenirNext;
+  src:  url('../assets/fonts/avenir-next/AvenirNextLTPro-Regular.otf');
+}
+@font-face {
+  font-family: avenirNextItalic;
+  src:  url('../assets/fonts/avenir-next/AvenirNextLTPro-It.otf');
+}
+@font-face {
+  font-family: dinAlt;
+  src:  url('../assets/fonts/din-alternate/DINAlternateRegular.otf');
+}
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+h2, h3, h4, h5, h6, small {
+  margin: 0;
+  font-family: avenirNext;
+  font-weight: normal;
+  color: #2a2a2a;
+}
+p {
+  font-family: avenirNext;
+  font-weight: normal;
+  color: #2a2a2a;
+  font-size: 1.1rem;
+}
+h1 {
+  margin: 0;
+  font-size: 4rem;
+  font-family: dinAlt;
+  font-weight: 500;
+  color: #2a2a2a;
+  text-transform: uppercase;
+}
+h2 {
+  font-size: 2.5rem;
+}
+.white {
+  color: white;
+}
+button {
+  color: white;
+  font-size: 1rem;
+}
+h3 {
+  font-family: dinAlt;
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+h5 {
+  color: white;
+  font-weight: bold;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+}
+h6 {
+  font-family: avenirNextItalic;
+  font-size: 1rem;
+}
+@media (max-width: 576px) {
+  h3, h4, h5, h6, p, h6.big-quote {
+    font-size: 1em !important;
+  }
+  .brand {
+    padding-top: 0.2rem;
+  }
+  small {
+    font-size: 0.7rem !important;
+  }
+  h1 {
+    font-size: 1em;
+  }
+  h2 {
+    font-size: 1.4em !important;
+  }
+}
+a {
+  color: #e24a4a;
+}
+a:hover {
+  cursor: pointer;
+}
+body {
+  transition: opacity 1s;
+}
+.hide-me { 
+  opacity: 0;
+}
+.hero {
+  height: 100vh !important;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-size: cover;
+  padding-top: 48px;
+  background-repeat: no-repeat;
+}
+.bg-image {
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.gallery-wrapper {
+  padding: 1px;
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+.gallery {
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: 460px;
+  height: 300px;
+  position: relative;
+  background-size: cover;
+}
+
+@media (max-width: 768px) {
+  .gallery-wrapper {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+/* When it comes to styling the fonts add 
+the exact fonts, sizes and weight of each 
+font to the h tags and p tag so that you
+don't have to add a class or anything for
+the correct fonts, they'll just be globally
+attached to the correct tag as default 
+
+Currently the fonts are:
+
+h1 - The main banner font "Building a Martian House"
+h2 - "Project Partners and Funders" (also "Donate").
+h3 - Elevator pitch font
+h4 - "Project Timeline" text, this will be light weight
+   and also used for the side panel headings. (multi-sized)
+h5 - Partner names (bold capitals).
+h6 - This could be the quote font in italics (we'll 
+   make this multi-sized as it'll be used for the
+   conversation quote as well).
+
+We might need a seperate class for the Ella&Nicki brand.
+That's ok because it'll only be used once.
+
+p - About description next to Ella and Nicki's avatar.
+
+p = font-family: 'Rubik', sans-serif;
+    font-weight: lighter;
+
+^^ Also good for all smaller h tags. I don't like it 
+for the main heading though.
+
+*/
+.plx-page {
+  perspective: 300px;
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.plx-group {
+  transform-style: preserve-3d;
+  position: relative;
+}
+.plx-layer {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
+.plx-close {
+  transform: translateZ(10px);
+}
+.plx-fore {
+  transform: translateZ(0px);
+}
+.plx-mid {
+  transform: translateZ(-300px) scale(2);  
+}
+.plx-back {
+  transform: translateZ(-600px) scale(3);
+}
+.body-container {
+  display: grid;
+  padding: 5rem 0 8rem 0;
+}
+.padder {
+  padding-top: 3rem;
+}
+.middler {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* This is a nice green background */
+.green {
+  background-color: #14B278;
+}
+.red {
+  background-color: #d45d54;
+}
+.blue {
+  background-color: #4d99cc;
+}
+.orange {
+  background-color: #fd7b25
+}
+.weak-center {
+  text-align: center;
+}
+.weak-right {
+  text-align: right;
+}
+img.avatar {
+  width: 230px;
+  border-radius: 50%;
+}
+img.head-icon {
+  width: 192px;
+}
+h1.banner {
+  width: 100%;
+  text-align: center;
+  padding: .8rem 0;
+  color: #FFF;
+  text-shadow: 2px 2px 5px #0009;
+  margin-top: 9rem;
+}
+@media (max-width: 992px) {
+  h1.banner {
+    font-size: 2.3rem;
+  }
+}
+h4.sub {
+  color: white;
+  text-align: center;
+  text-shadow: 2px 2px 5px #0009;
+  font-size: 1.6rem;
+}
+.quote-wrapper {
+  height: 100%;
+  align-items: flex-end;
+  display: flex;
+  justify-content: flex-end;
+}
+.quote-wrapper h6 {
+  color: #14B278;
+  background: white;
+  padding: .9rem;
+  margin: 1.5rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.quote-wrapper p {
+  color: #14B278;
+  background: white;
+  padding: .5rem;
+  margin: .7rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  font-size: .7rem;
+}
+@media (max-width: 576px) {
+  .quote-wrapper h6 {
+    font-size: 0.9rem;
+  }
+}
+.quote-name {
+  font-style: normal;
+  font-size: .7em;
+}

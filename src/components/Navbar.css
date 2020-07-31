@@ -1,0 +1,68 @@
+#navbar {
+  height: 48px;
+  display: flex;
+  align-items: center;
+  padding: .7rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  position: fixed;
+  top: 0;
+  background: white;
+  width: 100%;
+  z-index: 3;
+}
+#navbar .brand-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+#navbar .brand {
+  font-family: avenirNextBold;
+  height: 22px;
+}
+#navbar .brand img {
+  width: 50px;
+}
+#navbar a {
+  text-decoration: none;
+  color: inherit;
+}
+#navbar .nav-link-wrapper {
+  display: flex;
+}
+#navbar .nav-link {
+  color: #14b278;
+  font-family: avenirNext;
+  padding-right: 0.6rem;
+
+  background: none;
+  font-size: 1rem;
+  font-weight: 300;
+  padding: 0;
+  transition: color .2s;
+  border-radius: 7px;
+  padding-right: 0.6rem;
+  border: none;
+}
+#navbar .nav-link:hover {
+  cursor: pointer;
+}
+#navbar button:hover {
+  cursor: pointer;
+}
+#navbar i {
+  padding: .3rem .4rem;
+  border-radius: 5px;
+}
+@media (max-width: 576px) {
+  #navbar span {
+    display: none;
+  }
+  #navbar button {
+    position: relative;
+    right: 1rem;
+  }
+  #navbar i {
+    margin-right: 0;
+  }
+}
+
