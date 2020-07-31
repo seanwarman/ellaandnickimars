@@ -10,12 +10,28 @@ function background(img) {
   }
 }
 
+function menuOuterWrapperStyle(menuOpen) {
+  return {
+    /* note. this is 430 rather than 400 to hide 
+    the shadow... */
+    left: menuOpen ? '0px' : '-430px'
+  }
+}
+
+function greyedOutStyle(menuOpen) {
+  return {
+    opacity: menuOpen ? 0.3 : 0,
+    pointerEvents: menuOpen ? 'unset' : 'none'
+  }
+}
+
 function Menu({
-  menuOpen
+  menuOpen,
+  openMenu
 }) {
   return (
     <div id="menu">
-      <div className="menu-outer-wrapper">
+      <div className="menu-outer-wrapper" style={menuOuterWrapperStyle(menuOpen)}>
       <div className="menu-inner-wrapper">
           <h4>Project Timeline</h4>
           <div className="underline-wrapper">
@@ -85,7 +101,7 @@ function Menu({
   
         </div>
       </div>
-      <div onClick={() => openMenu(false)} className="greyed-out" style={{  pointerEvents: 'none' }}>
+      <div onClick={() => openMenu(false)} className="greyed-out" style={greyedOutStyle(menuOpen)}>
       </div>
     </div>
   )

@@ -1,4 +1,3 @@
-/* Menu Styles */
 #menu {
   position: absolute;
   display: flex;
@@ -11,9 +10,6 @@
   display: flex;
   z-index: 2;
   padding-bottom: 48px;
-  /* note. this is 430 rather than 400 to hide 
-  the shadow... */
-  left: -430px;
   transition: left .4s;
   position: fixed;
   margin-top: 48px;
@@ -74,10 +70,7 @@
   background-repeat: all;
   background-position: center;
   background-size: 25px;
-  opacity: 0;
   transition: opacity .4s;
   position: fixed;
   z-index: 1;
 }
-/* End Menu Styles */
-
