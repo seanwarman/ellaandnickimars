@@ -53,7 +53,8 @@ function background(img) {
 
 function MenuLinks() {
   return (
-    links.map(({link, img, title}, i ) => (
+
+    links && links.map(({link, img, title}, i ) => (
 
       <Link key={i} to={link} className="item-wrapper">
         <div className="circle-wrapper">

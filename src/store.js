@@ -1,14 +1,17 @@
-import { createStore } from 'redux'
+import { createStore, applyMiddleware } from 'redux'
 import {
   OPEN_MENU,
-  OPEN_MODAL
+  OPEN_MODAL,
+  SET_DELAY_MODAL
 } from './constants.js'
+import middleware from './middleware.js'
 
 const store = createStore(
   (state = {
 
+    menuOpen: false,
     modalOpen: false,
-    menuOpen: false
+    delayedDisplay: false
 
   }, action) => (
 
@@ -24,9 +27,14 @@ const store = createStore(
       modalOpen: action.modalOpen
     }
     :
+    action.type === SET_DELAY_MODAL ?
+    {
+      ...state,
+      delayedDisplay: action.delayedDisplay
+    }
+    :
     state
 
-  )
-)
+), applyMiddleware(middleware))
 
 export default store

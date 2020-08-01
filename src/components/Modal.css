@@ -5,16 +5,14 @@
   bottom: 0;
   left: 0;
   z-index: 3;
-  display: none;
+  /* display: none; */
+  display: flex;
   overflow: hidden;
   outline: 0;
 
   overflow-x: hidden;
   overflow-y: auto;
 
-  /* display: block; */
-
-  /* display: flex; */
   align-items: center;
   justify-content: center;
   background-color: #00000000;
@@ -25,9 +23,17 @@
   width: 80%;
   max-width: 560px;
   position: relative;
-  top: -400px;
   transition: all .5s;
-  opacity: 0;
+  z-index: 1;
+  /* top: -400px; */
+  /* opacity: 0; */
+}
+
+#modal .modal-background {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: 0;
 }
 
 #modal .modal-content {
@@ -106,6 +112,9 @@
   color: #afafaf;
 }
 
+#modal .close-icon:hover {
+  cursor: pointer;
+}
 #modal .close-icon:active {
   color: #5a5a5a;
 }
