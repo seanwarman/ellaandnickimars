@@ -1,22 +1,10 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import { OPEN_MENU } from '../contants.js'
+import { OPEN_MENU } from '../constants.js'
 
-import img1 from '../assets/pictures/menu-icons/hero-building-a-martian-house-main.webp'
-import img2 from '../assets/pictures/menu-icons/film-club-rocket-landed.webp'
-import img3 from '../assets/pictures/menu-icons/space-for-trees-sign.webp'
-import img4 from '../assets/pictures/menu-icons/the-launches-sunrise.webp'
-import img5 from '../assets/pictures/menu-icons/total-eclipse-hero.webp'
-import img6 from '../assets/pictures/menu-icons/decade-with-mars-hero.webp'
-
+import MenuLinks from './MenuLinks.js'
 
 import './Menu.css'
-
-function background(img) {
-  return {
-    backgroundImage: 'url(' + img + ')'
-  }
-}
 
 function menuOuterWrapperStyle(menuOpen) {
   return {
@@ -45,68 +33,9 @@ function Menu({
           <div className="underline-wrapper">
             <div className="underline"></div>
           </div>
-  
-          <a href="index.html" className="item-wrapper">
-            <div className="circle-wrapper">
-              <div className="circle" style={background(img1)}>
-              </div>
-            </div>
-            <p>
-              Building a Martian House
-            </p>
-          </a>
-  
-          <a href="filmclub.html" className="item-wrapper">
-            <div className="circle-wrapper">
-              <div className="circle" style={background(img2)}>
-              </div>
-            </div>
-            <p>
-              The World and Mars<br />
-              <small>A Summer Holiday Film Club</small>
-            </p>
-          </a>
-  
-          <a href="spacefortrees.html" className="item-wrapper">
-            <div className="circle-wrapper">
-              <div className="circle" style={background(img3)}>
-              </div>
-            </div>
-            <p>
-              Space for Trees
-            </p>
-          </a>
-  
-          <a href="thelaunches.html" className="item-wrapper">
-            <div className="circle-wrapper">
-              <div className="circle" style={background(img4)}>
-              </div>
-            </div>
-            <p>
-              The Launches
-            </p>
-          </a>
-  
-          <a href="totaleclipseofthehead.html" className="item-wrapper">
-            <div className="circle-wrapper">
-              <div className="circle" style={background(img5)}>
-              </div>
-            </div>
-            <p>
-              Total Eclipse of the Head
-            </p>
-          </a>
-  
-          <a href="adecadewithmars.html" className="item-wrapper">
-            <div className="circle-wrapper">
-              <div className="circle" style={background(img6)}>
-              </div>
-            </div>
-            <p>
-              A Decade With Mars
-            </p>
-          </a>
-  
+
+          <MenuLinks />
+
         </div>
       </div>
       <div onClick={() => openMenu(false)} className="greyed-out" style={greyedOutStyle(menuOpen)}>

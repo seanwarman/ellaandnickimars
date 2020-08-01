@@ -2,7 +2,7 @@ import { createStore } from 'redux'
 import {
   OPEN_MENU,
   OPEN_MODAL
-} from './contants.js'
+} from './constants.js'
 
 const store = createStore(
   (state = {
