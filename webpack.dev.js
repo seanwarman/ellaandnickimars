@@ -11,7 +11,8 @@ module.exports = merge(common, {
     contentBase: './build',
     host: '0.0.0.0',
     port: 3000,
-    historyApiFallback: true
+    historyApiFallback: true,
+    hot: true
   },
   mode: 'development',
 })

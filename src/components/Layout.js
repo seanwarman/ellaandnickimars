@@ -17,7 +17,9 @@ function Layout({
 
     {children}
 
-    <Footer />
+    {/*
+      <Footer />
+        */}
   </div>
 }
 

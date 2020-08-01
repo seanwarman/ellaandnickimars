@@ -102,15 +102,6 @@ body {
 .hide-me { 
   opacity: 0;
 }
-.hero {
-  height: 100vh !important;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  background-size: cover;
-  padding-top: 48px;
-  background-repeat: no-repeat;
-}
 .bg-image {
   width: 100%;
   background-position: center;
@@ -177,29 +168,7 @@ for the main heading though.
   overflow-y: auto;
   overflow-x: hidden;
 }
-.plx-group {
-  transform-style: preserve-3d;
-  position: relative;
-}
-.plx-layer {
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  right: 0;
-}
-.plx-close {
-  transform: translateZ(10px);
-}
-.plx-fore {
-  transform: translateZ(0px);
-}
-.plx-mid {
-  transform: translateZ(-300px) scale(2);  
-}
-.plx-back {
-  transform: translateZ(-600px) scale(3);
-}
+
 .body-container {
   display: grid;
   padding: 5rem 0 8rem 0;
