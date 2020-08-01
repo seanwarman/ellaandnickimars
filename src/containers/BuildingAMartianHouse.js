@@ -1,6 +1,12 @@
 import React from 'react'
 import HeroPlx from '../components/HeroPlx.js'
 
+import backgroundDesktop from '../assets/pictures/3dhero/hero-building-a-martian-house-background-stretched-2.webp'
+import backgroundMobile from '../assets/pictures/3dhero/mobile-hero-building-a-martian-house-background-stretched-2.webp'
+import midground from '../assets/pictures/3dhero/hero-building-a-martian-house-midground.webp'
+import foregroundDesktop from '../assets/pictures/3dhero/hero-building-a-martian-house-foreground.webp'
+import foregroundMobile from '../assets/pictures/3dhero/mobile-hero-building-a-martian-house-foreground.webp'
+
 import './BuildingAMartianHouse.css'
 
 function BuildingAMartianHouse() {
@@ -9,6 +15,9 @@ function BuildingAMartianHouse() {
 
       <HeroPlx
         title="BUILDING A MARTIAN HOUSE"
+        background={[backgroundMobile, backgroundDesktop]}
+        midground={[midground, midground]}
+        foreground={[foregroundMobile, foregroundDesktop]}
       >
       </HeroPlx>
 

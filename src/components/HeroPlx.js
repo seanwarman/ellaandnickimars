@@ -1,112 +1,101 @@
-import React, { useEffect } from 'react'
-
-import background from '../assets/pictures/3dhero/hero-building-a-martian-house-background-stretched-2.webp'
-import midground from '../assets/pictures/3dhero/hero-building-a-martian-house-midground.webp'
-import foreground from '../assets/pictures/3dhero/hero-building-a-martian-house-foreground.webp'
+import React, { useEffect, useState } from 'react'
+import { withRouter } from 'react-router-dom'
+import PlxTitle from './PlxTitle.js'
 
 import './HeroPlx.css'
 
+function initialiseAnimation(init, speed) {
+  let landscape = document.getElementsByClassName('hero-background')[0]
+  let page = document.getElementsByClassName('plx-page')[0]
+
+  const initialPosition = init
+
+  const landscapePosition = () => {
+    landscape.style.backgroundPosition = '0 ' + (((page.scrollTop/20)* speed)+initialPosition) + '%'
+  }
+  landscapePosition()
+
+  page.addEventListener('scroll', () => {
+    landscapePosition()
+  })
+
+}
+
 function imgStyle(img) {
+
   return {
     backgroundImage: `url(${img})`
   }
+
 }
 
-function Title({
-  children: title
-}) {
+const mediaWidth = (index, setIndex) => {
 
-  const words = title.split(' ')
+  const width = 576
 
-  return (
+  if(window.innerWidth <= width && index === 1) setIndex(0)
+  if(window.innerWidth > width && index === 0) setIndex(1)
 
-    <div className="plx-layer main-title-wrapper plx-back">
-      <div className="main-title">
+  return ({ target }) => {
 
-        {
-          words.map((word, wIndx) => (
+    if(target.innerWidth <= width && index === 1) setIndex(0)
+    if(target.innerWidth > width && index === 0) setIndex(1)
 
-            <span className="word" key={wIndx}>
-
-              {
-                word.split('').map((letter, lIndx) => (
-
-                  <div className="title-letter" key={lIndx}>
-                    {letter}
-                  </div>
-
-                ))
-              }
-
-            </span>
-
-          ))
-        }
-
-      </div>
-    </div>
-
-  )
+  }
 }
 
 function HeroPlx({
-  title
+  title,
+  location,
+  background,
+  midground,
+  foreground,
+  speed = -1.5,
+  init = 55
 }) {
 
+  const [ index, setIndex ] = useState(0)
+
+  const [ hidden, setHidden ] = useState(true)
+
   useEffect(() => {
-    animate()
+
+    initialiseAnimation(init, speed)
+
+    const setByWidth = mediaWidth(index, setIndex)
+
+    window.addEventListener('resize', setByWidth)
+
+    setHidden(false)
+
+    return function willUnmount() {
+      window.removeEventListener('resize', setByWidth)
+    }
+
   })
 
-  return <div id="hero">
+  return <div id="hero" className={hidden ? 'hidden' : 'unhidden'}>
 
-    <div className="mars-landscape"
-      style={imgStyle(background)}
+    <div className="hero-background"
+      style={imgStyle(background[index])}
     ></div>
+
     <div className="hero plx-group">
-      <div className="plx-layer plx-back mars-hills"
-        style={imgStyle(midground)}
-      ></div>
-      <div className="plx-layer plx-mid mars-people"
-        style={imgStyle(foreground)}
+
+      <div className="plx-layer plx-back hero-midground"
+        style={imgStyle(midground[index])}
       ></div>
 
-      <Title>{title}</Title>
+      <div className="plx-layer plx-mid hero-foreground"
+        style={imgStyle(foreground[index])}
+      ></div>
+
+      <PlxTitle>{title}</PlxTitle>
 
     </div>
 
   </div>
 }
 
-export default HeroPlx
+export default withRouter(HeroPlx)
 
-function animate() {
-  let landscape = document.getElementsByClassName('mars-landscape')[0];
-  let page = document.getElementsByClassName('plx-page')[0];
-
-  const initialPosition = 40;
-
-  const landscapePosition = () => {
-    landscape.style.backgroundPosition = '0 ' + (((page.scrollTop/20)* -1)+initialPosition) + '%';
-  }
-  landscapePosition();
-  page.addEventListener('scroll', () => {
-    landscapePosition();
-  });
-
-  let letters = document.getElementsByClassName('title-letter');
-
-  const animateTitle = (num, attribute, value) => {
-    if(num < letters.length + 1) {
-      letters[num].style[attribute] = value;
-      num++;
-      setTimeout(animateTitle, 40, num, attribute, value);
-    }
-  }
-
-  window.addEventListener('load', () => {
-    animateTitle(0, 'textShadow', '0 0 10px #ffffff');
-    setTimeout(animateTitle, 1000, 0, 'textShadow', '0 0 0 #ffffff');
-    setTimeout(animateTitle, 1700, 0, 'textShadow', '0 0 0 #ffffff00');
-    setTimeout(animateTitle, 2000, 0, 'color', 'rgba(255, 255, 255, 1)');
-  });
-}

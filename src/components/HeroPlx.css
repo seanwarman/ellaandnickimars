@@ -1,6 +1,18 @@
 #hero {
   height: 100vh;
   overflow: hidden;
+
+  /* Weirdly this breaks the foreground image. */
+  /* To see it, try setting the opcity to 0.5 in */
+  /* the browser. */
+  /* transition: opacity .2s; */
+
+}
+#hero.hidden {
+  opacity: 0;
+}
+#hero.unhidden {
+  opacity: 1;
 }
 #hero .plx-group {
   transform-style: preserve-3d;
@@ -34,16 +46,16 @@
   padding-top: 48px;
   background-repeat: no-repeat;
 }
-#hero .mars-landscape {
+#hero .hero-background {
   /* background-image: url('../assets/pictures/3dhero/hero-building-a-martian-house-background-stretched-2.webp'); */
-  background-size: 2000px;
-  background-position: bottom;
+  background-size: cover;
+  /* background-position: bottom; */
   background-repeat: no-repeat;
   height: 100%;
   width: 100%;
   position: absolute;
 }
-#hero .mars-hills {
+#hero .hero-midground {
   /* background-image: url('../assets/pictures/3dhero/hero-building-a-martian-house-midground.webp'); */
   height: 100%;
   width: 100%;
@@ -52,7 +64,7 @@
   background-position: bottom left;
   display: block;
 }
-#hero .mars-people {
+#hero .hero-foreground {
   /* background-image: url('../assets/pictures/3dhero/hero-building-a-martian-house-foreground.webp'); */
   height: 100%;
   width: 100%;
@@ -62,17 +74,17 @@
   transform: translateZ(-296px) scale(2) translateY(250px);
 }
 @media (max-width: 576px) {
-  #hero .mars-people {
+  #hero .hero-foreground {
     background-size: cover;
   }
-  #hero .mars-landscape {
-    background-image: url('../assets/pictures/3dhero/mobile-hero-building-a-martian-house-background-stretched-2.webp');
+  #hero .hero-background {
+    /* background-image: url('../assets/pictures/3dhero/mobile-hero-building-a-martian-house-background-stretched-2.webp'); */
   }
-  #hero .mars-hills {
+  #hero .hero-midground {
     display: none;
   }
-  #hero .mars-people {
-    background-image: url('../assets/pictures/3dhero/mobile-hero-building-a-martian-house-foreground.webp');
+  #hero .hero-foreground {
+    /* background-image: url('../assets/pictures/3dhero/mobile-hero-building-a-martian-house-foreground.webp'); */
     background-position: center bottom;
   }
 }
@@ -107,11 +119,13 @@
 @media (max-width: 1000px) {
   #hero .main-title-wrapper {
     font-size: 2.5rem;
+    padding-top: 20%;
   }
 }
 @media (max-width: 576px) {
   #hero .main-title-wrapper {
-    font-size: 1.5rem;
+    font-size: 2.3rem;
+    padding-top: 32%;
   }
   #hero .main-title {
     grid-row: 1/2;
