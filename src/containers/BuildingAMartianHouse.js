@@ -7,6 +7,18 @@ import midground from '../assets/pictures/3dhero/hero-building-a-martian-house-m
 import foregroundDesktop from '../assets/pictures/3dhero/hero-building-a-martian-house-foreground.webp'
 import foregroundMobile from '../assets/pictures/3dhero/mobile-hero-building-a-martian-house-foreground.webp'
 
+import aboutPic from '../assets/pictures/avatar-ellaandnicki2.webp'
+import partner1 from '../assets/pictures/partners-lucy-berthoud.webp'
+import partner2 from '../assets/pictures/partners-hugh-broughton.webp' 
+import partner3 from '../assets/pictures/partners-space-settlement-challenge.webp'
+import partner4 from '../assets/pictures/partners-brigstow.webp'
+import partner5 from '../assets/pictures/partners-brigstow.webp'
+
+import icon2 from '../assets/pictures/icon-satellite.webp'
+import icon3 from '../assets/pictures/icon-mountains-of-mars.webp'
+
+import press from '../assets/pictures/press-the-conversation.webp'
+
 import './BuildingAMartianHouse.css'
 
 function BuildingAMartianHouse() {
@@ -21,30 +33,28 @@ function BuildingAMartianHouse() {
       >
       </HeroPlx>
 
+
       <div className="container-fluid plx-fore about">
         <div className="body-container container">
           <div className="row">
             <div className="col-12 weak-center">
 
-              {/*
                 <iframe 
-                  style={{border: '1px solid grey'}}
                   width="100%" 
                   height="624" 
-                  // src="https://www.youtube.com/embed/RdXqpiPvvRo?rel=0&autoplay=1" 
-                  frameborder="0" 
+                  src="https://www.youtube.com/embed/RdXqpiPvvRo?rel=0&autoplay=1" 
+                  frameBorder="0" 
                   allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-                  allowfullscreen
+                  allowFullScreen
                 >
                 </iframe>
-              */}
 
-            </div>
-            <div className="col-12 weak-center padder">
-              <h2>About</h2>
             </div>
           </div>
           <div className="row">
+            <div className="col-12 weak-center padder">
+              <h2>About</h2>
+            </div>
             <div className="col-12 padder">
               <p className="pitch">
                 We’re building a Martian House. It’s going to be a real life house that you can step into and imagine how we might live on another planet.
@@ -61,7 +71,7 @@ function BuildingAMartianHouse() {
             <div className="col-md-5 col-12 weak-center padder middler">
               <img
               className="avatar"
-              src="assets/pictures/avatar-ellaandnicki2.webp"
+              src={aboutPic}
               alt="ella-and-nicki"
               />
             </div>
@@ -97,7 +107,7 @@ function BuildingAMartianHouse() {
         <div className="container body-container">
           <div className="row">
             <div className="col-12 weak-center padder">
-              <img src="assets/pictures/icon-satellite.webp" alt="satellite-icon" className="head-icon" />
+              <img src={icon2} alt="satellite-icon" className="head-icon" />
             </div>
           </div>
           <div className="row">
@@ -107,20 +117,20 @@ function BuildingAMartianHouse() {
           </div>
           <div className="row">
             <div className="col-sm-4 col-6 weak-center padder">
-              <a href="https://www.youtube.com/watch?v=KBqZ76qlbnY" target="_blank" className="funder-link">
-                <img src="assets/pictures/partners-lucy-berthoud.webp" alt="" className="spotlight-avatar" />
+              <a href="https://www.youtube.com/watch?v=KBqZ76qlbnY" alt="A picture of Ella and Nicki" target="_blank" className="funder-link">
+                <img src={partner1} alt="Lucy Berthoud" className="spotlight-avatar" />
               </a>
               <h5>Lucy Berthoud</h5>
               <small>Professor of Space Engineering</small>
             </div>
             <div className="col-sm-4 col-6  weak-center padder">
               <a href="https://hbarchitects.co.uk/" target="_blank" className="funder-link">
-                <img src="assets/pictures/partners-hugh-broughton.webp" alt="" className="spotlight-avatar" />
+                <img src={partner2} alt="Hugh Broughten Project" className="spotlight-avatar" />
               </a>
               <h5>Hugh Broughton Architects</h5>
             </div>
             <div className="col-sm-4 col-12  weak-center padder middler">
-              <a href="http://www.edtrust.org.uk/" target="_blank" className="funder-link">
+              <a href="http://www.edtrust.org.uk/" alt="High Broughton" target="_blank" className="funder-link">
                 <div className="spotlight-avatar ed-marsh"></div>
               </a>
               <h5>The Edward Marshall Trust</h5>
@@ -129,16 +139,16 @@ function BuildingAMartianHouse() {
           <div className="row">
             <div className="col-sm-6 col-6 weak-center padder nudge-right">
               <a href="https://www.guaana.com/funding/grants/mbrchallenge/details" target="_blank" className="funder-link">
-                <img src="assets/pictures/partners-space-settlement-challenge.webp" alt="" className="spotlight-avatar" />
+                <img src={partner3} alt="The Edward Marshall trust logo" className="spotlight-avatar" />
               </a>
               <h5>MBR Space Settlement Grant</h5>
-              <small>This project recieved seed funding from the Dubai Future Foundation through 
+              <small>This project recieved seed funding from the Dubai Future <br /> Foundation through &nbsp;
                 <a className="white" target="_blank" href="http://guaana.com">Guaana.com</a>
               </small>
             </div>
             <div className="col-sm-6 col-6 weak-center padder nudge-left">
               <a href="http://www.bristol.ac.uk/brigstow/" target="_blank" className="funder-link">
-                <img src="assets/pictures/partners-brigstow.webp" alt="" className="spotlight-avatar" />
+                <img src={partner5} alt="MBR Space Settlement GrantMBR Space Settlement Grant" className="spotlight-avatar" />
               </a>
               <h5>The Brigstow Institute <br /> University of Bristol</h5>
             </div>
@@ -151,8 +161,8 @@ function BuildingAMartianHouse() {
             <div className="col-12 weak-center">
               <img
                 className="head-icon"
-                src="assets/pictures/icon-mountains-of-mars.webp" 
-                alt="mars-house-sketch"
+                src={icon3}
+                alt="A sketch icon of a mars house"
               />
             </div>
             <div className="col-12 weak-center padder">
@@ -166,7 +176,8 @@ function BuildingAMartianHouse() {
               </h6>
             </div>
             <div className="col-md-5 col-12 middler padder swap-1">
-              <a target="_blank" href="https://theconversation.com/five-things-you-need-to-do-to-build-a-home-on-mars-97742"><img className="card" src="assets/pictures/press-the-conversation.webp" alt="press" /></a>
+              <a target="_blank" href="https://theconversation.com/five-things-you-need-to-do-to-build-a-home-on-mars-97742">
+                <img className="card" src={press} alt="press" /></a>
             </div>
           </div>
         </div>

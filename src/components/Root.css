@@ -168,10 +168,16 @@ for the main heading though.
   overflow-y: auto;
   overflow-x: hidden;
 }
-
 .body-container {
   display: grid;
   padding: 5rem 0 8rem 0;
+}
+.container-fluid {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
 }
 .padder {
   padding-top: 3rem;

@@ -1,5 +1,7 @@
 import React from 'react'
+import { connect } from 'react-redux'
 import { Link } from 'react-router-dom'
+import { OPEN_MENU } from '../constants.js'
 
 import img1 from '../assets/pictures/menu-icons/hero-building-a-martian-house-main.webp'
 import img2 from '../assets/pictures/menu-icons/film-club-rocket-landed.webp'
@@ -20,7 +22,7 @@ const links = [
       <small>A Summer Holiday Film Club</small>
     </span>,
     img: img2,
-    link: '/filmclub'
+    link: '/theworldandmars'
   },
   {
     title: 'Space for Trees',
@@ -51,12 +53,17 @@ function background(img) {
   }
 }
 
-function MenuLinks() {
+function MenuLinks({ openMenu }) {
   return (
 
     links && links.map(({link, img, title}, i ) => (
 
-      <Link key={i} to={link} className="item-wrapper">
+      <Link 
+        onClick={() => openMenu(false)}
+        key={i} 
+        to={link} 
+        className="item-wrapper"
+      >
         <div className="circle-wrapper">
           <div className="circle" style={background(img)}>
           </div>
@@ -70,4 +77,8 @@ function MenuLinks() {
   )
 }
 
-export default MenuLinks
+export default connect(
+  null, {
+    openMenu: menuOpen => ({ type: OPEN_MENU, menuOpen })
+  }
+)(MenuLinks)

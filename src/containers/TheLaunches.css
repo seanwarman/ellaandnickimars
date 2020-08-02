@@ -1,0 +1,133 @@
+.hero {
+  /* background-image: url('../../assets/pictures/the-launches-sunrise.webp'); */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-size: cover;
+  height: 630px;
+  padding-top: 48px;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+#the-launches .intro-image {
+  overflow: hidden;
+  /* background-image: url(../../assets/pictures/the-launches-launch.webp); */
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media (max-width: 576px) {
+  #the-launches .intro-image {
+    height: 381px;
+  }
+  .hero {
+    /* background-image: url('../../assets/pictures/mobile-the-launches-sunrise.webp'); */
+  }
+}
+#the-launches .med-image-two {
+  height: 330px;
+  overflow: hidden;
+}
+#the-launches .med-image-two img {
+  position: relative;
+  top:  -30%;
+  width: 100%;
+}
+#the-launches .med-image-three {
+  height: 330px;
+  overflow: hidden;
+}
+#the-launches .med-image-three img {
+  position: relative;
+  width: 100%;
+}
+#the-launches img.head-icon-sm {
+  width: 92px;
+}
+#the-launches .icon-wrapper {
+  justify-content: center;
+  align-items: center;
+}
+#the-launches img.head-icon-lg {
+  width: 262px;
+}
+#the-launches img.big-circle {
+  width: 260px;
+  border-radius: 50%;
+}
+#the-launches .video {
+  height: 600px;
+}
+@media (max-width: 768px) {
+  #the-launches .video {
+    height: 300px;
+  }
+}
+#the-launches .spotlight-avatar {
+  border-radius: 50%;
+  height: 128px;
+  width: 128px;
+  border: solid 7px white;
+}
+@media (max-width: 576px) {
+  #the-launches .spotlight-avatar {
+    height: 98px;
+    width: 98px;
+  }
+}
+#the-launches .spotlight-avatar {
+  border-radius: 50%;
+  height: 128px;
+  width: 128px;
+  border: solid 7px white;
+}
+@media (max-width: 576px) {
+  #the-launches .spotlight-avatar {
+    height: 98px;
+    width: 98px;
+  }
+}
+#the-launches h5 {
+  padding-top: .8rem;
+}
+#the-launches small {
+  color: white;
+}
+@media (min-width: 768px) {
+  .nudge-left {
+    padding-right: 9rem;
+  }
+  .nudge-right {
+    padding-left: 9rem;
+  }
+}
+#the-launches .crazy-table-position {
+  position: relative;
+  left: 1rem;
+}
+#the-launches .big-quote {
+  font-size: 2rem;
+  text-align: right;
+  padding-right: 2rem;
+}
+@media (max-width: 576px) {
+  #the-launches .big-quote {
+    text-align: center;
+  }
+}
+#the-launches .card {
+  width: 310px;
+  height: 310px;
+  box-shadow: 3px 3px 5px #0000004d;
+}
+#contact.contact {
+  padding-bottom: 3rem;
+  background-color: #F0CA4D;
+}
+#contact  .contact-wrapper {
+  max-width: 400px;
+}
+#contact h2, #contact p {
+  color: white;
+}
+

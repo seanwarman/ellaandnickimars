@@ -1,0 +1,93 @@
+#film-club .big-image {
+  /* background-image: url('../../assets/pictures/film-club-rocket.webp'); */
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  width: 100%;
+}
+#film-club img.head-icon-sm {
+  width: 122px;
+}
+#film-club img.head-icon-lg {
+  width: 262px;
+}
+#film-club img.big-circle {
+  width: 260px;
+  border-radius: 50%;
+}
+#film-club .video {
+  height: 600px;
+}
+@media (max-width: 768px) {
+  #film-club .video {
+    height: 300px;
+  }
+}
+#film-club .spotlight-avatar {
+  border-radius: 50%;
+  height: 128px;
+  width: 128px;
+  border: solid 7px white;
+}
+@media (max-width: 576px) {
+  #film-club .spotlight-avatar {
+    height: 98px;
+    width: 98px;
+  }
+}
+#film-club .spotlight-avatar {
+  border-radius: 50%;
+  height: 128px;
+  width: 128px;
+  border: solid 7px white;
+}
+@media (max-width: 576px) {
+  #film-club .spotlight-avatar {
+    height: 98px;
+    width: 98px;
+  }
+}
+#film-club h5 {
+  padding-top: .8rem;
+}
+#film-club small {
+  color: white;
+}
+@media (min-width: 768px) {
+  .nudge-left {
+    padding-right: 9rem;
+  }
+  .nudge-right {
+    padding-left: 9rem;
+  }
+}
+#film-club .crazy-table-position {
+  position: relative;
+  left: 1rem;
+}
+#film-club .big-quote {
+  font-size: 2rem;
+  text-align: right;
+  padding-right: 2rem;
+}
+@media (max-width: 576px) {
+  #film-club .big-quote {
+    text-align: center;
+  }
+}
+#film-club .card {
+  width: 310px;
+  height: 310px;
+  box-shadow: 3px 3px 5px #0000004d;
+}
+#contact.contact {
+  padding-bottom: 3rem;
+  background-color: #F0CA4D;
+}
+#contact  .contact-wrapper {
+  max-width: 400px;
+}
+#contact h2, #contact p {
+  color: white;
+}
+

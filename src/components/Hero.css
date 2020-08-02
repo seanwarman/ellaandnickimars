@@ -1,0 +1,29 @@
+#hero.hidden {
+  opacity: 0;
+}
+#hero.unhidden {
+  opacity: 1;
+}
+
+#hero {
+  height: 100vh;
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-size: cover;
+  padding-top: 48px;
+  background-repeat: no-repeat;
+  background-position-y: 94%;
+}
+@media (min-width: 1200px) {
+  #hero {
+    background-size: cover;
+  }
+}
+@media (max-width: 576px) {
+  #hero {
+    background-size: cover;
+  }
+}
+
