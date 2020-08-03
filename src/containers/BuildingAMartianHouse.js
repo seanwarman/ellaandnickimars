@@ -30,6 +30,7 @@ function BuildingAMartianHouse() {
         background={[backgroundMobile, backgroundDesktop]}
         midground={[midground, midground]}
         foreground={[foregroundMobile, foregroundDesktop]}
+        dimentions={[101, 100]}
       >
       </HeroPlx>
 

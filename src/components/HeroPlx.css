@@ -1,6 +1,7 @@
 #hero {
   height: 100vh;
   overflow: hidden;
+  position: relative;
 
   /* Weirdly this breaks the foreground image. */
   /* To see it, try setting the opcity to 0.5 in */

@@ -4,15 +4,15 @@ import PlxTitle from './PlxTitle.js'
 
 import './HeroPlx.css'
 
-function initialiseAnimation(init, speed) {
+function initialiseAnimation(initial, speed) {
   let landscape = document.getElementsByClassName('hero-background')[0]
   let page = document.getElementsByClassName('plx-page')[0]
 
-  const initialPosition = init
 
   const landscapePosition = () => {
-    landscape.style.backgroundPosition = '0 ' + (((page.scrollTop/20)* speed)+initialPosition) + '%'
+    landscape.style.backgroundPosition = 55 + (((page.scrollTop/20) * speed) + initial) + '%'
   }
+
   landscapePosition()
 
   page.addEventListener('scroll', () => {
@@ -51,7 +51,10 @@ function HeroPlx({
   midground,
   foreground,
   speed = -1.5,
-  init = 55
+  dimentions = [100, 100],
+  blur = 0,
+  initial = 55,
+  position = [0, 0]
 }) {
 
   const [ index, setIndex ] = useState(0)
@@ -60,7 +63,7 @@ function HeroPlx({
 
   useEffect(() => {
 
-    initialiseAnimation(init, speed)
+    initialiseAnimation(initial, speed)
 
     const setByWidth = mediaWidth(index, setIndex)
 
@@ -77,7 +80,13 @@ function HeroPlx({
   return <div id="hero" className={hidden ? 'hidden' : 'unhidden'}>
 
     <div className="hero-background"
-      style={imgStyle(background[index])}
+      style={{
+        ...imgStyle(background[index]),
+        width: `${dimentions[0]}%`,
+        height: `${dimentions[1]}%`,
+        filter: `blur(${blur}px)`,
+        // transform: `translate(${position[0]}px ${position[1]}px)`
+      }}
     ></div>
 
     <div className="hero plx-group">
