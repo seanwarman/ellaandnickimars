@@ -1,6 +1,7 @@
 import React from 'react'
-
 import Hero from '../components/Hero.js'
+import Footer from '../components/Footer.js'
+import Contact from '../components/Contact.js'
 
 import backgroundDesktop from '../assets/pictures/total-eclipse-window-sign.webp'
 import backgroundMobile from '../assets/pictures/mobile-total-eclipse-window-sign.webp'
@@ -113,6 +114,9 @@ function TotalEclipseOfTheHead() {
 
       </div> 
 
+      <Contact />
+
+      <Footer />
 
     </div>
   )

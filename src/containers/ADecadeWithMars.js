@@ -1,5 +1,7 @@
 import React from 'react'
 import Hero from '../components/Hero.js'
+import Footer from '../components/Footer.js'
+import Contact from '../components/Contact.js'
 
 import backgroundDesktop from '../assets/pictures/decade-with-mars-hero.jpg'
 import backgroundMobile from '../assets/pictures/mobile-decade-with-mars-hero.webp'
@@ -100,6 +102,10 @@ function ADecadeWithMars() {
         </div>
 
       </div>
+
+      <Contact />
+
+      <Footer />
 
     </div>
   )

@@ -1,5 +1,7 @@
 import React from 'react'
 import Hero from '../components/Hero.js'
+import Footer from '../components/Footer.js'
+import Contact from '../components/Contact.js'
 
 import backgroundDesktop from '../assets/pictures/the-launches-sunrise.webp'
 import backgroundMobile from '../assets/pictures/mobile-the-launches-sunrise.webp'
@@ -157,6 +159,9 @@ function TheLaunches() {
 
       </div> 
 
+      <Contact />
+
+      <Footer />
 
     </div>
   )

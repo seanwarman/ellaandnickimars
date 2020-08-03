@@ -1,5 +1,7 @@
 import React from 'react'
 import HeroPlx from '../components/HeroPlx.js'
+import Footer from '../components/Footer.js'
+import Contact from '../components/Contact.js'
 
 import backgroundDesktop from '../assets/pictures/3dhero/hero-building-a-martian-house-background-stretched-2.webp'
 import backgroundMobile from '../assets/pictures/3dhero/mobile-hero-building-a-martian-house-background-stretched-2.webp'
@@ -183,6 +185,11 @@ function BuildingAMartianHouse() {
           </div>
         </div>
       </div>
+
+      <Contact />
+
+      <Footer />
+
     </div>
   )
 }

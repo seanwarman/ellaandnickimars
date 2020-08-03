@@ -1,5 +1,7 @@
 import React from 'react'
 import Hero from '../components/Hero.js'
+import Footer from '../components/Footer.js'
+import Contact from '../components/Contact.js'
 
 import backgroundMobile from '../assets/pictures/mobile-space-for-trees-sign.webp'
 import backgroundDesktop from '../assets/pictures/space-for-trees-sign.webp'
@@ -143,6 +145,10 @@ function SpaceForTrees() {
 
 
         </div> 
+
+        <Contact />
+
+      <Footer />
 
     </div>
   )

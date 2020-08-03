@@ -1,5 +1,7 @@
 import React from 'react'
 import Hero from '../components/Hero.js'
+import Footer from '../components/Footer.js'
+import Contact from '../components/Contact.js'
 
 import filmClub from '../assets/pictures/film-club-rocket-landed.jpg'
 import bigImage from '../assets/pictures/film-club-rocket.webp'
@@ -99,6 +101,9 @@ function TheWorldAndMars() {
 
       </div>  
 
+      <Contact />
+
+      <Footer />
 
     </div>
   )

@@ -4,6 +4,7 @@ import {
 } from './constants.js'
 
 let timerID
+let chimpValid = false
 
 const middleware = store => next => action => {
 
@@ -15,7 +16,6 @@ const middleware = store => next => action => {
   next(action)
 
 }
-
 
 function modalAnimationDelay(next, action) {
 
