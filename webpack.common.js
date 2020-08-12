@@ -54,13 +54,23 @@ module.exports = {
           }
         ]
       },
+      // {
+      //   test: /\.(png|jpe?g|gif|webp)$/,
+      //   loader: 'url-loader?limit=10000&name=img/[name].[ext]'
+      // },
       {
         test: /\.(png|jpe?g|gif|webp)$/,
-        loader: 'url-loader?limit=10000&name=img/[name].[ext]'
+        loader: 'file-loader',
+        options: {
+          name: 'assets/images/[name].[hash].[ext]'
+        }
       },
       {
         test: /\.(svg|eot|woff2?|ttf|otf)/,
-        loader: 'file-loader'
+        loader: 'file-loader',
+        options: {
+          name: 'assets/fonts/[name].[hash].[ext]'
+        }
       }
     ]
   }
