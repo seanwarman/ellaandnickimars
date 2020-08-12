@@ -14,7 +14,7 @@
   background-size: cover;
   padding-top: 48px;
   background-repeat: no-repeat;
-  background-position-y: 94%;
+  background-position: center;
 }
 @media (min-width: 1200px) {
   #hero {
