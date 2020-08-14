@@ -22,7 +22,8 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './public/template.html'
+      template: './public/template.html',
+      favicon: './favicon.ico'
     }),
     new CleanWebpackPlugin()
   ],
