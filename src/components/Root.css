@@ -170,7 +170,9 @@ for the main heading though.
 }
 .body-container {
   display: grid;
-  padding: 5rem 0 8rem 0;
+  padding-bottom: 8rem;
+  padding-top: 5rem;
+  /* padding: 5rem 0 8rem 0; */
 }
 .container-fluid {
   width: 100%;
