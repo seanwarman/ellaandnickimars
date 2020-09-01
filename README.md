@@ -3,7 +3,7 @@
 A mobile-first webpage built using React for Bristol artist's Ella & Nicki for their
 10 year mars project.
 
-Check out the site and consider donating to this exiting project:
+Check out the site and consider donating to this exciting project:
 [ellaandnicki.com/](http://www.ellaandnicki.com/)
 
 This webpage was actually built using Redux, probably needlessly but I
