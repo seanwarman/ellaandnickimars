@@ -26,12 +26,11 @@ function PlxTitle({
     setTimeout(animateTitle, 1700, 0, 'textShadow', '0 0 0 #ffffff00')
     setTimeout(animateTitle, 2000, 0, 'color', 'rgba(255, 255, 255, 1)')
 
-
   })
 
   return (
 
-    <div className="plx-layer main-title-wrapper plx-back">
+    <div className="plx-layer main-title-wrapper">
       <div className="main-title">
 
         {

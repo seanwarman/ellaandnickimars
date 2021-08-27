@@ -4,7 +4,11 @@ import PlxTitle from './PlxTitle.js'
 
 import './HeroPlx.css'
 
+const safari = !navigator.userAgent.match(/Chrome/g)
+
 function initialiseAnimation(initial, speed) {
+  if (safari) return
+
   let landscape = document.getElementsByClassName('hero-background')[0]
   let page = document.getElementsByClassName('plx-page')[0]
 
@@ -21,12 +25,22 @@ function initialiseAnimation(initial, speed) {
 
 }
 
-function imgStyle(img) {
+function backgroundPositionStyle(safari) {
+  return safari ? {
+    backgroundPosition: 'center',
+  } : {}
+}
 
+function translateStyle(safari) {
+  return {
+    transform: `translateZ(-296px) scale(${safari ? 1 : 2}) translateY(250px)`
+  }
+}
+
+function imgStyle(img) {
   return {
     backgroundImage: `url(${img})`
   }
-
 }
 
 const mediaWidth = (index, setIndex) => {
@@ -85,18 +99,23 @@ function HeroPlx({
         width: `${dimentions[0]}%`,
         height: `${dimentions[1]}%`,
         filter: `blur(${blur}px)`,
-        // transform: `translate(${position[0]}px ${position[1]}px)`
+        ...backgroundPositionStyle(safari),
       }}
     ></div>
 
     <div className="hero plx-group">
 
       <div className="plx-layer plx-back hero-midground"
-        style={imgStyle(midground[index])}
+        style={{
+          ...imgStyle(midground[index]),
+        }}
       ></div>
 
       <div className="plx-layer plx-mid hero-foreground"
-        style={imgStyle(foreground[index])}
+        style={{
+          ...imgStyle(foreground[index]),
+          ...translateStyle(safari),
+        }}
       ></div>
 
       <PlxTitle>{title}</PlxTitle>
